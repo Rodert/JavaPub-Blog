@@ -2,6 +2,8 @@
 
 JavaPub的博客仓库
 
+http://javapub.net.cn/
+
 [toc]
 
 ## 启动方式
