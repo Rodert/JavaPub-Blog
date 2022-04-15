@@ -12,5 +12,7 @@ features:
   details: 你能行
 - title: 主动
   details: 必须是你
-footer: 基本功永不过时
+footer: 
+
+ 
 ---
