@@ -1,10 +1,15 @@
 {
   "devDependencies": {
     "vuepress": "^1.9.7",
+    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
     "vuepress-theme-reco": "^1.2.0"
   },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "valine": "^1.4.18"
   }
 }
