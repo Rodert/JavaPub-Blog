@@ -9,7 +9,11 @@ module.exports = {
     themeConfig: {
       logo: '/javapub.jpg',
       nav: [
-        { text: 'Home', link: '/' },
+        { text: 'Home', 
+          items: [
+            { text: '小游戏', link: '/tech/game/' },
+          ]
+        },
         { text: '最少必要面试题', link: '/willbe/' },
         { text: '旧版博客', link: 'https://github.com/Rodert/JavaPub' },
         { text: '实用技巧', link: '/practical/' },
