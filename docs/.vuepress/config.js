@@ -35,6 +35,7 @@ module.exports = {
         recordIP: true,         // 记录评论者的IP
       },
       lastUpdated: 'Last Updated',
+      noFoundPageByTencent: false,//关闭公益广告
     },
     plugins: ['autobar']
 }
