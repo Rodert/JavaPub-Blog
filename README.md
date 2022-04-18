@@ -28,6 +28,13 @@ http://javapub.net.cn/
 
 > npm install valine --save
 
+路径中文转拼音
+
+> npm install -D vuepress-plugin-permalink-pinyin
+
+全文搜索
+
+> npm i vuepress-plugin-fulltext-search
 
 2. 命令运行本地服务
 

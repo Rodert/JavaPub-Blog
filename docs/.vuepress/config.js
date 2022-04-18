@@ -11,7 +11,7 @@ module.exports = {
       nav: [
         { text: 'Home', 
           items: [
-            { text: '小游戏', link: '/tech/game/' },
+            { text: '小游戏', link: '/game/' },
           ]
         },
         { text: '最少必要面试题', link: '/willbe/' },
@@ -36,6 +36,21 @@ module.exports = {
       },
       lastUpdated: 'Last Updated',
       noFoundPageByTencent: false,//关闭公益广告
+      // sidebar: {
+      //   sidebarDepth: 3,
+      //   "/game/": [
+      //     "",
+      //     "Java实现植物大战僵尸小游戏【附源码】",
+      //     {
+      //       title: "植物大战僵尸",
+      //       collapsable: true,  
+      //       sidebarDepth: 4,  
+      //       path: "Java实现植物大战僵尸小游戏【附源码】",
+      //     },
+      //   ],
+      // },
     },
-    plugins: ['autobar']
+    plugins: [
+      'autobar',
+    ],
 }

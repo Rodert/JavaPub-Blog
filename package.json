@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "valine": "^1.4.18"
+    "valine": "^1.4.18",
+    "vuepress-plugin-fulltext-search": "^2.2.1"
   }
 }
