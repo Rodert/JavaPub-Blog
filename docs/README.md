@@ -4,7 +4,7 @@ heroImage: /javapub.jpg
 heroText: JavaPub
 tagline: 专注于面试、副业，技术人的成长记录
 actionText: 最少必要面试题 →
-actionLink: http://javapub.net.cn/
+actionLink: http://javapub.net.cn/willbe/
 features:
 - title: 乐观
   details: 你是做大事的人
