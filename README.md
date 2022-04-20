@@ -8,43 +8,20 @@ http://javapub.net.cn/
 
 ## 启动方式
 
+
 1. 下载依赖
 
 初始化
 
-> npm install vuepress
+> npm install yarn
 
-博客主题
+> yarn install
 
-> npm install vuepress-theme-reco@1.2.0 --save-dev
-
-参见：https://vuepress-theme-reco.recoluan.com/views/1.x/installUse.html
-
-自动生成目录插件
-
-> npm install -D boboidream/vuepress-bar
-
-浏览量
-
-> npm install valine --save
-
-路径中文转拼音
-
-> npm install -D vuepress-plugin-permalink-pinyin
-
-全文搜索
-
-> npm i vuepress-plugin-fulltext-search
 
 2. 命令运行本地服务
 
-> vuepress dev docs
+> yarn docs:dev
 
-或
-
-```bash
-npm run dev
-```
 
 3. 打包成静态文件
 
