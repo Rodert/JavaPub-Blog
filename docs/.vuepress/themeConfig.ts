@@ -62,7 +62,7 @@ export default defineThemeConfig({
       // sidebar
       sidebar: sidebar.en,
 
-      footer: "Default footer",
+      footer: "<a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>",
 
       displayFooter: true,
 

@@ -1,16 +1,15 @@
 {
-  "devDependencies": {
-    "vuepress": "^1.9.7",
-    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
-    "vuepress-theme-reco": "^1.2.0"
-  },
+  "name": "javapub",
+  "version": "2.0.0",
+  "description": "A project of vuepress-theme-hope",
+  "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs"
   },
-  "dependencies": {
-    "babel-plugin-dynamic-import-node": "^2.3.3",
-    "valine": "^1.4.18",
-    "vuepress-plugin-fulltext-search": "^2.2.1"
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.39",
+    "vuepress-theme-hope": "^2.0.0-beta.45"
   }
 }

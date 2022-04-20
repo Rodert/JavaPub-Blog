@@ -13,25 +13,25 @@ projects:
     desc: 人人可上手的小游戏
     link: http://javapub.net.cn/
 
-   - icon: link
-     name: 面试题
-     desc: 最少必要面试题
-     link: http://javapub.net.cn/
+  - icon: friend
+    name: 面试题
+    desc: 最少必要面试题
+    link: http://javapub.net.cn/
 
-   - icon: link
-     name: 实用技巧
-     desc: 实用技巧
-     link: http://javapub.net.cn/
+  - icon: article
+    name: 实用技巧
+    desc: 实用技巧
+    link: http://javapub.net.cn/
 	 
-   - icon: link
-     name: 关于我
-     desc: 我的故事
-     link: http://javapub.net.cn/
+  - icon: book
+    name: 关于我
+    desc: 我的故事
+    link: http://javapub.net.cn/
 	 
-   - icon: link
-     name: 旧版博客
-     desc: GitHub
-     link: http://javapub.net.cn/
+  - icon: link
+    name: 旧版博客
+    desc: GitHub
+    link: http://javapub.net.cn/
 	 
 #   - icon: book
 #     name: 书籍名称
@@ -54,7 +54,7 @@ projects:
 #     link: https://你的自定义链接
 
 # footer: 自定义你的页脚文字
-footer: [京ICP备2021007111号-2](https://beian.miit.gov.cn/)
+footer: 京ICP备2021007111号-2
 ---
 
 这是一个博客主页。
