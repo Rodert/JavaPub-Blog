@@ -13,6 +13,8 @@ http://javapub.net.cn/
 
 初始化
 
+> npm install vuepress
+
 > npm install yarn
 
 > yarn install
@@ -46,3 +48,8 @@ http://javapub.net.cn/
 - [ ] 百度提交收录链接
 - [ ] 支持https
 - [ ] SEO
+
+
+# 备用
+
+<a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>

@@ -1,13 +1,13 @@
 import { defineNavbarConfig } from "vuepress-theme-hope";
 
 export const javapub = defineNavbarConfig([
-  "/javapub/",
-  "/javapub/home",
-  { text: "使用指南", icon: "creative", link: "/javapub/guide/" },
+  "/",
+  "/home",
+  { text: "使用指南", icon: "creative", link: "/guide/" },
   {
     text: "博文",
     icon: "edit",
-    prefix: "/javapub/posts/",
+    prefix: "/posts/",
     children: [
       {
         text: "文章 1-4",
@@ -45,8 +45,8 @@ export const javapub = defineNavbarConfig([
     ],
   },
   {
-    text: "主题文档",
+    text: "关于站长",
     icon: "note",
-    link: "https://vuepress-theme-hope.github.io/v2/javapub/",
+    link: "http://javapub.net.cn/me",
   },
 ]);

@@ -3,16 +3,16 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default defineThemeConfig({
-  hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
+  hostname: "http://javapub.net.cn/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "Wang Shiyu",
+    url: "http://javapub.net.cn/",
   },
 
   iconPrefix: "iconfont icon-",
 
-  logo: "/logo.svg",
+  logo: "/javapub-backgroup.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -57,17 +57,17 @@ export default defineThemeConfig({
   locales: {
     "/": {
       // navbar
-      navbar: navbar.en,
+      navbar: navbar.javapub,
 
       // sidebar
-      sidebar: sidebar.en,
+      sidebar: sidebar.javapub,
 
       footer: "<a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>",
 
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        description: "一个来自巴彦淖尔的朋友",
         intro: "/intro.html",
       },
     },
