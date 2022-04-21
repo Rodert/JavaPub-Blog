@@ -40,11 +40,11 @@ http://javapub.net.cn/
 # TODO
 
 - [x] 初始化vuepress
-- [x] 安装主题
+- [x] 安装主题vuepress-theme-hope
 - [x] 评论系统
-- [x] 侧边栏目录自动生成
+- [ ] 侧边栏目录自动生成
 - [ ] 404页面
-- [ ] 不蒜子访问量统计
+- [ ] 访问量统计
 - [ ] 百度提交收录链接
 - [ ] 支持https
 - [ ] SEO
@@ -53,3 +53,19 @@ http://javapub.net.cn/
 # 备用
 
 <a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>
+
+
+# 账号信息
+
+评论管理：
+
+https://rodert-java-pub-blog-cq4tgfqik-rodert.vercel.app/ui
+
+
+# 项目结构介绍
+
+
+`yarn.lock` yarn管理，最好不熬手动修改，可能破坏某些东西
+
+`docs/zh` 主题样式参考
+

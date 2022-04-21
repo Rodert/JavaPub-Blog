@@ -22,35 +22,35 @@ export default defineThemeConfig({
 
   blog: {
     medias: {
-      Baidu: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "https://example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "https://example.com",
-      Instagram: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
+      // Baidu: "https://example.com",
+      // Bitbucket: "https://example.com",
+      // Dingding: "https://example.com",
+      // Discord: "https://example.com",
+      // Dribbble: "https://example.com",
+      // Email: "https://example.com",
+      // Evernote: "https://example.com",
+      // Facebook: "https://example.com",
+      // Flipboard: "https://example.com",
+      Gitee: "https://gitee.com/rodert/JavaPub",
+      GitHub: "https://github.com/Rodert",
+      // Gitlab: "https://example.com",
+      // Gmail: "https://example.com",
+      // Instagram: "https://example.com",
+      // Lines: "https://example.com",
+      // Linkedin: "https://example.com",
+      // Pinterest: "https://example.com",
+      // Pocket: "https://example.com",
+      // QQ: "https://example.com",
+      // Qzone: "https://example.com",
+      // Reddit: "https://example.com",
+      // Rss: "https://example.com",
+      // Steam: "https://example.com",
+      // Twitter: "https://example.com",
+      // Wechat: "https://example.com",
+      // Weibo: "https://example.com",
+      // Whatsapp: "https://example.com",
+      // Youtube: "https://example.com",
+      Zhihu: "https://www.zhihu.com/people/zhui-ma-7-49",
     },
   },
 
@@ -65,6 +65,9 @@ export default defineThemeConfig({
       footer: "<a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>",
 
       displayFooter: true,
+
+      //浏览量
+      visitor: true,
 
       blog: {
         description: "一个来自巴彦淖尔的朋友",
@@ -112,11 +115,12 @@ export default defineThemeConfig({
       /**
        * Using giscus
        */
-      type: "giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      // type: "giscus",
+      // repo: "Rodert/JavaPub-Blog",
+      // repoId: "R_kgDOHK-WNg",
+      // category: "Announcements",
+      // categoryId: "DIC_kwDOHK-WNs4COsXL",
+
 
       /**
        * Using twikoo
@@ -127,8 +131,11 @@ export default defineThemeConfig({
       /**
        * Using Waline
        */
-      // type: "waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      type: "waline",
+      serverURL: "https://rodert-java-pub-blog-cq4tgfqik-rodert.vercel.app",
+      dark: "auto",//自适应深色模式
+      meta: ['nick', 'mail', 'link'],
+      login: "force",
     },
 
     mdEnhance: {

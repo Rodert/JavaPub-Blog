@@ -1,6 +1,30 @@
 ---
-sidebar: auto
+# 这是侧边栏索引
+index: 1
+# 这是页面的图标
+icon: page
+# 这是文章的标题
+title: 10道不得不会的ElasticSearch面试题
+# 设置作者
+author: Wang Shiyu
+# 设置写作时间
+date: 2022-04-21
+# 一个页面可以有多个分类
+category:
+  - 最少必要面试题
+# 一个页面可以有多个标签
+tag:
+  - elasticsearch
+  - 面试题
+# 此页面会出现在首页的文章板块中
+star: true
 ---
+
+Elastic Search
+
+<!-- more -->
+
+10道不得不会的ElasticSearch面试题
 
 以下是 ElasticSearch 面试题，相信大家都会有种及眼熟又陌生的感觉、看过可能在短暂的面试后又马上忘记了。**JavaPub**在这里整理这些容易忘记的重点知识及**解答**，`建议收藏，经常温习查阅`。
 
