@@ -17,7 +17,7 @@ tag:
   - 页面配置
   - 使用指南
 # 此页面会在文章列表置顶
-sticky: true
+# sticky: true
 # 此页面会出现在首页的文章板块中
 star: true
 # 你可以自定义页脚

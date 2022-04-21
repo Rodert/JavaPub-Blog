@@ -11,27 +11,27 @@ projects:
   - icon: project
     name: 小游戏
     desc: 人人可上手的小游戏
-    link: http://javapub.net.cn/
+    link: /game/
 
   - icon: friend
     name: 面试题
     desc: 最少必要面试题
-    link: http://javapub.net.cn/willbe
+    link: /willbe/
 
   - icon: article
     name: 实用技巧
     desc: 实用技巧
-    link: http://javapub.net.cn/
+    link: /practical/
 	 
   - icon: book
     name: 关于我
     desc: 我的故事
-    link: http://javapub.net.cn/
+    link: /me/
 	 
   - icon: link
     name: 旧版博客
     desc: GitHub
-    link: http://javapub.net.cn/
+    link: https://github.com/Rodert/JavaPub
 	 
 #   - icon: book
 #     name: 书籍名称
@@ -57,8 +57,4 @@ projects:
 footer: MIT Licensed | Copyright © 2022-present Wang Shiyu
 ---
 
-这是一个博客主页。
-
-要使用此布局，你应该在页面前端设置 `layout: Blog` 和 `home: true`。
-
-相关配置文档请见 [博客主页](https://vuepress-theme-hope.github.io/v2/zh/guide/blog/home/)。
+如果你愿意

@@ -4,6 +4,7 @@ export const javapub = defineNavbarConfig([
   "/",
   "/home",
   { text: "使用指南", icon: "creative", link: "/guide/" },
+  { text: "面试指南", icon: "creative", link: "/willbe/" },
   {
     text: "博文",
     icon: "edit",
@@ -14,7 +15,7 @@ export const javapub = defineNavbarConfig([
         icon: "edit",
         prefix: "article/",
         children: [
-          { text: "文章 1", icon: "edit", link: "article1" },
+          { text: "文章 01", icon: "edit", link: "article1" },
           { text: "文章 2", icon: "edit", link: "article2" },
           "article3",
           "article4",
