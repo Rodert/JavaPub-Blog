@@ -29,11 +29,9 @@ http://javapub.net.cn/
 
 命令用来生成静态文件，默认情况下，放置在docs/.vuepress/dist目录中，当然你也可以在docs/.vuepress/config.js中的dest字段来修改默认存放目录。
 
-> vuepress build docs
+> yarn docs:build
 
-或
 
-> npm run build
 
 
 

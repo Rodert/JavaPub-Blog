@@ -1,3 +1,31 @@
+---
+# 这是侧边栏索引
+index: 1
+# 这是页面的图标
+icon: page
+# 这是文章的标题
+title: Java实现一个坦克大战的小游戏【附源码】
+# 设置作者
+author: Wang Shiyu
+# 设置写作时间
+date: 2022-04-23
+# 一个页面可以有多个分类
+category:
+  - 小游戏
+# 一个页面可以有多个标签
+tag:
+  - 小游戏
+# 此页面会出现在首页的文章板块中
+star: true
+---
+
+坦克大战
+
+<!-- more -->
+
+Java实现一个坦克大战的小游戏【附源码】
+
+
 我的网站已经上线了 <http://javapub.net.cn/>
 
 `文末源码`
@@ -208,6 +236,8 @@ var CrackAnimation = function(type,context,crackObj){
 };
 ```
 
+## 源码下载
+
 
 获取源码，公众号回复【坦克】，即可。更多最新Java面试题加群、见群公告。~
 
@@ -235,4 +265,12 @@ var CrackAnimation = function(type,context,crackObj){
 点赞本文，然后私信我，我免费分享给你哈~
 
 ![image](https://tva4.sinaimg.cn/large/007F3CC8ly1h1f3gd3qcmj30dw0dbq36.jpg)
+
+公众号二维码
+
+![](/accounts/wechat.jpg)
+
+个人微信
+
+![](/accounts/QRcode.jpg)
 

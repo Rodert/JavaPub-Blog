@@ -7,18 +7,22 @@ export default defineThemeConfig({
 
   author: {
     name: "Wang Shiyu",
-    url: "http://javapub.net.cn/",
+    url: "http://javapub.net.cn",
   },
 
   iconPrefix: "iconfont icon-",
 
   logo: "/javapub-backgroup.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/Rodert",
 
   docsDir: "demo/src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+
+  footer: "<a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>",
+
+  displayFooter: true,
 
   blog: {
     medias: {
@@ -85,7 +89,7 @@ export default defineThemeConfig({
       // sidebar
       sidebar: sidebar.zh,
 
-      footer: "默认页脚",
+      footer: "<a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>",
 
       displayFooter: true,
 

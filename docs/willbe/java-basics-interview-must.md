@@ -1,3 +1,31 @@
+---
+## 这是侧边栏索引
+index: 1
+## 这是页面的图标
+icon: page
+## 这是文章的标题
+title: 10道不得不会的Java基础面试题
+## 设置作者
+author: Wang Shiyu
+## 设置写作时间
+date: 2022-04-21
+## 一个页面可以有多个分类
+category:
+  - 最少必要面试题
+## 一个页面可以有多个标签
+tag:
+  - java
+  - 面试题
+## 此页面会出现在首页的文章板块中
+star: true
+---
+
+Java 基础
+
+<!-- more -->
+
+10道不得不会的Java基础面试题
+
 以下都是Java的基础面试题，相信大家都会有种及眼熟又陌生的感觉、看过可能在短暂的面试后又马上忘记了。**JavaPub**在这里整理这些容易忘记的重点知识及**解答**，`建议收藏，经常温习查阅`。
 
 评论区见
@@ -7,7 +35,7 @@
 ---
 
 @[toc]
-# 1. instanceof 关键字的作用
+## 1. instanceof 关键字的作用
 instanceof 是 Java 的保留关键字。它的作用是测试它左边的对象是否是它右边的类的实例，返回 boolean 的数据类型。
 
 ```java
@@ -31,7 +59,7 @@ System.out.println(i instanceof Object);//编译不通过
 
 
 
-# 2. Java自动装箱和拆箱
+## 2. Java自动装箱和拆箱
 什么是装箱拆箱，这里不做源码层面解读，源码解读在JavaPub公众号发出。这里通过讲解 int 和 Interger 区别，解答Java自动装箱和拆箱。
 
 > 自动装箱 ----- 基本类型的值 → 包装类的实例
@@ -116,7 +144,7 @@ Double、Float的valueOf方法的实现是类似的（没有缓存数值，这�
 
  ---
 
-# 3. 重载和重写区别
+## 3. 重载和重写区别
 重载和重写是一个特别好理解的概念，这里说一个通俗的解答方式
 
 **重载（Overload）**:首先是位于一个类之中或者其子类中，具有相同的方法名，但是方法的参数不同，返回值类型可以相同也可以不同。
@@ -171,7 +199,7 @@ public class JavaPubTest {
 
 ---
 
-# 4. equals与==区别
+## 4. equals与==区别
 
 **"=="是判断两个变量或实例是不是指向同一个内存空间。**
 **"equals"是判断两个变量或实例所指向的内存空间的值是不是相同。**
@@ -200,7 +228,7 @@ User user4 = new User("JavaPub", "man", "1996-08-28")
 
 ---
 
-# 5. 谈谈NIO和BIO区别
+## 5. 谈谈NIO和BIO区别
 致力于大白话说清楚。NIO和BIO是一个相对有点抽象的概念，如果你对网络有点了解，理解起来可能会更顺畅。首先说一下基本
 
 **BIO**：同步阻塞IO，每一个客户端连接，服务端都会对应一个处理线程，对于没有分配到处理线程的连接就会被阻塞或者拒绝。相当于是`一个连接一个线程`。
@@ -248,7 +276,7 @@ https://www.cnblogs.com/shoshana-kong/p/11228555.html
 
 ---
 
-# 6. String、StringBuffer、StringBuilder 的区别是什么？
+## 6. String、StringBuffer、StringBuilder 的区别是什么？
 
 **String**是Immutable类的典型实现，被声明为 final class，除了hash这个属性其它属性都声明为final。它的不可变性，所以例如拼接字符串时候会产生很多无用的中间对象，如果频繁的进行这样的操作对性能有所影响。
 
@@ -260,7 +288,7 @@ StringBuffer、StringBuilder就是解决String的这个性能问题。
 
 ---
 
-# 7. 泛型是什么，有什么特点
+## 7. 泛型是什么，有什么特点
 
 泛型在编码中有非常广泛的使用（jdk5引入），你一定经常能见到类似这种写法 `<T>` 。
 
@@ -292,7 +320,7 @@ JVM并不知道泛型的存在，因为泛型在编译阶段就已经被处理�
 
 ---
 
-# 8. final 有哪些用法
+## 8. final 有哪些用法
 final关键字有四个常见用法。
 
 **final修饰一个类**
@@ -341,7 +369,7 @@ final类中的所有成员方法都会被隐式地指定为final方法，也就�
 
 ---
 
-# 9. 说一下Java注解
+## 9. 说一下Java注解
 
 在Java编程中，注解非常常见，注解的本质是什么？
 
@@ -572,7 +600,7 @@ public class MyLogAspect {
 
 ---
 
-# 10. Java创建对象有几种方式
+## 10. Java创建对象有几种方式
 Java中有5种创建对象的方式，下面给出它们的例子
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/44e70dbb3062498fbbfbaa9045c0f8d6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_17,color_FFFFFF,t_70,g_se,x_16)
@@ -631,14 +659,28 @@ Employee emp5 = (Employee) in.readObject();
 > 查看更多面试题及答案
 > ![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h11lc8tbdbj3076076gm7.jpg)
 
-# 推荐阅读：
+## 推荐阅读：
 
-[【Java基础】10道不得不会的Java基础面试题](https://mp.weixin.qq.com/s/3Nviyml0cvnX_HHkZ5DjWg)
 
-[【Java并发】10道不得不会的Java并发基础面试题](https://mp.weixin.qq.com/s/h2tTwDVqL15rCI6rftgn9A)
+[【Java基础】10道不得不会的Java基础面试题](java-basics-interview-must.md)
 
-[【MySQL】10道不得不会的MySQL基础面试题](https://mp.weixin.qq.com/s/yVPwCoSQ-8OYvhw8bH0PtA)
+[【Java并发】10道不得不会的Java并发基础面试题](java-concurrent-interview-must)
 
-[【ElasticSearch】10道不得不会的ElasticSearch面试题](https://mp.weixin.qq.com/s/z3D37HqeTUmwrdheUL_Efw)
+[【MySQL】10道不得不会的MySQL基础面试题](mysql-interview-must.md)
 
-[【JVM】10道不得不会的JVM面试题](https://gitee.com/rodert/JavaPub)
+[【ElasticSearch】10道不得不会的ElasticSearch面试题](elasticsearch-interview-must.md)
+
+[【JVM】10道不得不会的JVM面试题](jvm-interview-must.md)
+
+[GItHub](https://github.com/Rodert)|[GitEE](https://gitee.com/rodert)
+
+
+
+
+公众号二维码
+
+![](/accounts/wechat.jpg)
+
+个人微信
+
+![](/accounts/QRcode.jpg)

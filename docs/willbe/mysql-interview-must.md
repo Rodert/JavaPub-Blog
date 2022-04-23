@@ -1,3 +1,31 @@
+---
+## 这是侧边栏索引
+index: 1
+## 这是页面的图标
+icon: page
+## 这是文章的标题
+title: 10道不得不会的MySQL基础面试题
+## 设置作者
+author: Wang Shiyu
+## 设置写作时间
+date: 2022-04-21
+## 一个页面可以有多个分类
+category:
+  - 最少必要面试题
+## 一个页面可以有多个标签
+tag:
+  - mysql
+  - 面试题
+## 此页面会出现在首页的文章板块中
+star: true
+---
+
+MySql
+
+<!-- more -->
+
+10道不得不会的MySQL基础面试题
+
 以下都是 **MySQL常见面试题**，相信大家都会有种及眼熟又陌生的感觉、看过可能在短暂的面试后又马上忘记了。**JavaPub**在这里整理这些容易忘记的重点知识及**解答**，`建议收藏，经常温习查阅`。
 
 评论区见
@@ -12,7 +40,7 @@
 ---
 
 
-# 1. mysql有哪几种log
+## 1. mysql有哪几种log
 
 重做日志(redo log)、回滚日志(undo log)、二进制日志(binlog)、错误日志(errorlog)、慢查询日志(slow query log)、一般查询日志(general log)，中继日志(relay log)
 
@@ -30,7 +58,7 @@
 
 ---
 
-# 2. MySQL的复制原理以及流程
+## 2. MySQL的复制原理以及流程
 
 1. 主：binlog线程——记录下所有改变了数据库数据的语句，放进master上的binlog中。
 2. 从：io线程——在使用start slave 之后，负责从master上拉取 binlog 内容，放进 自己的relay log中。
@@ -38,7 +66,7 @@
 
 ---
 
-# 3. 事物的4种隔离级别
+## 3. 事物的4种隔离级别
 
 隔离强度逐渐增强，性能逐渐变差。
 
@@ -51,7 +79,7 @@
 
 ---
 
-# 4. 相关概念
+## 4. 相关概念
 
 **脏读**
 
@@ -71,13 +99,13 @@
 
 ---
 
-# 5. MySQL数据库几个基本的索引类型
+## 5. MySQL数据库几个基本的索引类型
 
 普通索引、唯一索引、主键索引、全文索引
 
 ---
 
-# 6. drop、delete与truncate的区
+## 6. drop、delete与truncate的区
 SQL中的drop、delete、truncate都表示删除，但是三者有一些差别
 
 1、delete和truncate只删除表的数据不删除表的结构
@@ -87,7 +115,7 @@ SQL中的drop、delete、truncate都表示删除，但是三者有一些差别
 
 ---
 
-# 7. 数据库的乐观锁和悲观锁是什么？
+## 7. 数据库的乐观锁和悲观锁是什么？
 
 **悲观锁**的特点是先获取锁，再进行业务操作，即 “悲观” 的认为获取锁是非常有可能失败的，因此要先确保获取锁成功再进行业务操作。通常所说的 “一锁二查三更新” 即指的是使用悲观锁。
 
@@ -107,7 +135,7 @@ mysql 还有个问题是 select… for update 语句执行中，如果数据表�
 
 ---
 
-# 8. SQL优化方式
+## 8. SQL优化方式
 1. 对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。
 2. 应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如果索引是整形，那么可以在索引上设置默认值 0，确保表中列没有 null 值。
 3. 应尽量避免在 where 子句中使用 != 或 <> 操作符，否则将引擎放弃使用索引而进行全表扫描。
@@ -121,7 +149,7 @@ mysql 还有个问题是 select… for update 语句执行中，如果数据表�
 
 ---
 
-# 9. 从锁的类别上分MySQL都有哪些锁呢？
+## 9. 从锁的类别上分MySQL都有哪些锁呢？
 从锁的类别上来讲，有共享锁和排他锁。
 
 **共享锁**: 又叫做读锁。 当用户要进行数据的读取时，对数据加上共享锁。共享锁可以同时加上多个。
@@ -139,9 +167,11 @@ mysql 还有个问题是 select… for update 语句执行中，如果数据表�
 
 ---
 
-# 推荐阅读：
+## 推荐阅读：
 
 系列面试题
+
+
 
 [【Java基础】10道不得不会的Java基础面试题](https://mp.weixin.qq.com/s/3Nviyml0cvnX_HHkZ5DjWg)
 
@@ -151,4 +181,12 @@ mysql 还有个问题是 select… for update 语句执行中，如果数据表�
 
 [【ElasticSearch】10道不得不会的ElasticSearch面试题](https://mp.weixin.qq.com/s/z3D37HqeTUmwrdheUL_Efw)
 
-[【JVM】10道不得不会的JVM面试题](https://gitee.com/rodert/JavaPub)
+[【JVM】10道不得不会的JVM面试题](jvm-interview-must.md)
+
+[GItHub](https://github.com/Rodert)|[GitEE](https://gitee.com/rodert)
+
+
+
+
+
+

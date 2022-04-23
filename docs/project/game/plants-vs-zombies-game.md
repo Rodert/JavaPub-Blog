@@ -1,3 +1,30 @@
+---
+# 这是侧边栏索引
+index: 1
+# 这是页面的图标
+icon: page
+# 这是文章的标题
+title: Java实现植物大战僵尸小游戏【附源码】
+# 设置作者
+author: Wang Shiyu
+# 设置写作时间
+date: 2022-04-23
+# 一个页面可以有多个分类
+category:
+  - 小游戏
+# 一个页面可以有多个标签
+tag:
+  - 小游戏
+# 此页面会出现在首页的文章板块中
+star: true
+---
+
+植物大战僵
+
+<!-- more -->
+
+Java实现植物大战僵尸小游戏【附源码】
+
 `文末源码`
 
 # Java 实现 植物大战僵尸 小游戏【附源码】
@@ -281,8 +308,11 @@ LoadLvl();
 </html>
 ```
 
+## 源码下载
+
 获取源码，公众号回复【植物大战僵尸】，见公 ~
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a9a010f9dfa14601b5375523f54019b9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_19,color_FFFFFF,t_70,g_se,x_16#pic_center)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a9a010f9dfa14601b5375523f54019b9.png)
 
 
 不会还有人没 **点赞 + 关注 + 收藏** 吧!
@@ -291,11 +321,11 @@ LoadLvl();
 
 # 系列推荐：
 
-[Java 实现 捕鱼达人 小游戏【附源码】](https://javapub.net.cn/tech/)
+[Java 实现 捕鱼达人 小游戏【附源码】](https://javapub.net.cn/)
 
-[Java 实现 贪吃蛇 小游戏【附源码】](https://javapub.net.cn/tech/)
+[Java 实现 贪吃蛇 小游戏【附源码】](https://javapub.net.cn/)
 
-[Java 实现 1024 小游戏【附源码】](https://javapub.net.cn/tech/)
+[Java 实现 1024 小游戏【附源码】](https://javapub.net.cn/)
 
 [Java实现一个坦克大战的小游戏【附源码】](https://javapub.net.cn/tech/)
 
@@ -303,4 +333,12 @@ LoadLvl();
 
 [Java 实现 植物大战僵尸 小游戏【附源码】](https://javapub.net.cn/tech/)
 
+
+公众号二维码
+
+![](/accounts/wechat.jpg)
+
+个人微信
+
+![](/accounts/QRcode.jpg)
 
