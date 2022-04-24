@@ -108,6 +108,15 @@ export default defineThemeConfig({
   },
 
   plugins: {
+    //搜索start
+    search: {
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        }
+      },
+    },
+    //搜索end
     blog: {
       autoExcerpt: true,
     },

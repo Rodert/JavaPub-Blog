@@ -19,6 +19,11 @@ http://javapub.net.cn/
 
 > yarn install
 
+搜索：
+
+> npm i -D @vuepress/plugin-search@next
+
+> npm i -D @vuepress/plugin-docsearch@next
 
 2. 命令运行本地服务
 
@@ -48,7 +53,7 @@ http://javapub.net.cn/
 - [ ] SEO
 
 
-# 备用
+# 备用信息
 
 <a href='https://beian.miit.gov.cn/'>京ICP备2021007111号-2</a>
 
