@@ -21,6 +21,31 @@ export const javapub = defineSidebarConfig({
       collapsable: true,
       children: "structure",
     },
+    {
+      text: "python",
+      icon: "creative",
+      prefix: "posts/",
+      link: "posts/",
+      collapsable: true,
+      children: [
+        {
+          text: "python",
+          icon: "creative",
+          prefix: "article/",
+          // link: "project/game/",
+          collapsable: true,
+          children: "structure",
+        },
+        {
+          text: "python",
+          icon: "creative",
+          prefix: "python/",
+          // link: "project/game/",
+          collapsable: true,
+          children: "structure",
+        },
+      ],
+    },
 
     
     // {
