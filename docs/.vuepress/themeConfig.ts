@@ -108,6 +108,10 @@ export default defineThemeConfig({
   },
 
   plugins: {
+    //rss
+    feed: {
+      rss: true,
+    },
     //搜索start
     search: {
       locales: {

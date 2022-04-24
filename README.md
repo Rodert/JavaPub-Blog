@@ -51,6 +51,8 @@ http://javapub.net.cn/
 - [ ] 百度提交收录链接
 - [ ] 支持https
 - [ ] SEO
+- [ ] 本地搜索
+
 
 
 # 备用信息
