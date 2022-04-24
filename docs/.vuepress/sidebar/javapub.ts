@@ -22,14 +22,14 @@ export const javapub = defineSidebarConfig({
       children: "structure",
     },
     {
-      text: "python",
+      text: "文章",
       icon: "creative",
       prefix: "posts/",
       link: "posts/",
       collapsable: true,
       children: [
         {
-          text: "python",
+          text: "推文",
           icon: "creative",
           prefix: "article/",
           // link: "project/game/",
