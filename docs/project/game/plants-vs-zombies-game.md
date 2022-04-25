@@ -327,11 +327,11 @@ LoadLvl();
 
 [Java 实现 1024 小游戏【附源码】](https://javapub.net.cn/)
 
-[Java实现一个坦克大战的小游戏【附源码】](https://javapub.net.cn/tech/)
+[Java实现一个坦克大战的小游戏【附源码】](/project/game)
 
-[Java实现一个打飞机的小游戏【附源码】](https://javapub.net.cn/tech/)
+[Java实现一个打飞机的小游戏【附源码】](/project/game)
 
-[Java 实现 植物大战僵尸 小游戏【附源码】](https://javapub.net.cn/tech/)
+[Java 实现 植物大战僵尸 小游戏【附源码】](/project/game)
 
 
 公众号二维码
