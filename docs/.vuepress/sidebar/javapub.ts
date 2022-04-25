@@ -44,6 +44,13 @@ export const javapub = defineSidebarConfig({
           collapsable: true,
           children: "structure",
         },
+        {
+          text: "redis",
+          icon: "creative",
+          prefix: "redis/",
+          collapsable: true,
+          children: "structure",
+        },
       ],
     },
 
