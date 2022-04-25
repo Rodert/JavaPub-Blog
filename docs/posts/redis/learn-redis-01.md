@@ -50,7 +50,7 @@ redis入门
 > redis是目前最热的缓存组件之一，如果你还不懂，那就开始，入门到实战
 
 
-> 本文主要是 **<font color=#159957 face="黑体">Redis</font>** 入门知识，介绍 Redis 特性、使用场景、安装和数据类型。
+> 本文主要是 **<span color=#159957 face="黑体">Redis</span>** 入门知识，介绍 Redis 特性、使用场景、安装和数据类型。
 
 > 中文官网：http://www.redis.cn/
 
@@ -64,14 +64,14 @@ redis入门
 
 > 这是一些redis介绍，做一些简单了解即可。
 
-**<font color=#159957 face="黑体">Redis</font>**（Remote Dictionary Server )，即远程字典服务，是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。从2010年3月15日起，Redis的开发工作由VMware主持。从2013年5月开始，**<font color=#159957 face="黑体">Redis</font>** 的开发由Pivotal赞助。
+**<span color=#159957 face="黑体">Redis</span>**（Remote Dictionary Server )，即远程字典服务，是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。从2010年3月15日起，Redis的开发工作由VMware主持。从2013年5月开始，**<span color=#159957 face="黑体">Redis</span>** 的开发由Pivotal赞助。
 
-redis 是一个 **<font color=#159957 face="黑体">key-value</font>** 存储系统。和 Memcached 类似，它支持存储的 value 类型相对更多，包括string(字符串)、list(链表)、set(集合)、zset(sorted set --有序集合)和hash（哈希类型）。这些数据类型都支持push/pop、add/remove及取交集并集和差集及更丰富的操作，而且这些操作都是原子性的。在此基础上，**<font color=#159957 face="黑体">Redis</font>** 支持各种不同方式的排序。与 **<font color=#159957 face="黑体">memcached</font>** 一样，为了保证效率，数据都是缓存在内存中。区别的是 **<font color=#159957 face="黑体">Redis</font>** 会周期性的把更新的数据写入磁盘或者把修改操作写入追加的记录文件，并且在此基础上实现了 **<font color=#159957 face="黑体">master-slave</font>**(主从)同步。
+redis 是一个 **<span color=#159957 face="黑体">key-value</span>** 存储系统。和 Memcached 类似，它支持存储的 value 类型相对更多，包括string(字符串)、list(链表)、set(集合)、zset(sorted set --有序集合)和hash（哈希类型）。这些数据类型都支持push/pop、add/remove及取交集并集和差集及更丰富的操作，而且这些操作都是原子性的。在此基础上，**<span color=#159957 face="黑体">Redis</span>** 支持各种不同方式的排序。与 **<span color=#159957 face="黑体">memcached</span>** 一样，为了保证效率，数据都是缓存在内存中。区别的是 **<span color=#159957 face="黑体">Redis</span>** 会周期性的把更新的数据写入磁盘或者把修改操作写入追加的记录文件，并且在此基础上实现了 **<span color=#159957 face="黑体">master-slave</span>**(主从)同步。
 
-**<font color=#159957 face="黑体">Redis</font>** 是一个高性能的key-value数据库。 **<font color=#159957 face="黑体">Redis</font>** 的出现，很大程度补偿了**<font color=#159957 face="黑体">memcached</font>**这类key/value存储的不足，在部 分场合可以对关系数据库起到很好的补充作用。它提供了Java，C/C++，C#，PHP，JavaScript，Perl，Object-C，Python，Ruby，Erlang等客户端，使用很方便。
-**<font color=#159957 face="黑体">Redis</font>** 支持主从同步。数据可以从主服务器向任意数量的从服务器上同步，从服务器可以是关联其他从服务器的主服务器。这使得 **<font color=#159957 face="黑体">Redis</font>** 可执行单层树复制。存盘可以有意无意的对数据进行写操作。由于完全实现了发布/订阅机制，使得从数据库在任何地方同步树时，可订阅一个频道并接收主服务器完整的消息发布记录。同步对读取操作的可扩展性和数据冗余很有帮助。
+**<span color=#159957 face="黑体">Redis</span>** 是一个高性能的key-value数据库。 **<span color=#159957 face="黑体">Redis</span>** 的出现，很大程度补偿了**<span color=#159957 face="黑体">memcached</span>**这类key/value存储的不足，在部 分场合可以对关系数据库起到很好的补充作用。它提供了Java，C/C++，C#，PHP，JavaScript，Perl，Object-C，Python，Ruby，Erlang等客户端，使用很方便。
+**<span color=#159957 face="黑体">Redis</span>** 支持主从同步。数据可以从主服务器向任意数量的从服务器上同步，从服务器可以是关联其他从服务器的主服务器。这使得 **<span color=#159957 face="黑体">Redis</span>** 可执行单层树复制。存盘可以有意无意的对数据进行写操作。由于完全实现了发布/订阅机制，使得从数据库在任何地方同步树时，可订阅一个频道并接收主服务器完整的消息发布记录。同步对读取操作的可扩展性和数据冗余很有帮助。
 
-**<font color=#159957 face="黑体">Redis</font>** 的官网地址，非常好记，是redis.io。（域名后缀io属于国家域名，是british Indian Ocean territory，即英属印度洋领地），Vmware在资助着 **<font color=#159957 face="黑体">Redis</font>** 项目的开发和维护。
+**<span color=#159957 face="黑体">Redis</span>** 的官网地址，非常好记，是redis.io。（域名后缀io属于国家域名，是british Indian Ocean territory，即英属印度洋领地），Vmware在资助着 **<span color=#159957 face="黑体">Redis</span>** 项目的开发和维护。
 
 
 
@@ -89,51 +89,51 @@ Linux box 是运行 Linux 2.6 , 这是 X3320 Xeon 2.5 ghz。
 
 
 
-1. **<font color=#159957 face="黑体">Redis </font>**与其他 **<font color=#159957 face="黑体">key-value</font>** 缓存产品有以下三个特点：
-2. **<font color=#159957 face="黑体">Redis </font>**支持数据的持久化，可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用。
-3. **<font color=#159957 face="黑体">Redis </font>**不仅仅支持简单的 **<font color=#159957 face="黑体">key-value</font>**类型的数据，同时还提供 **<font color=#159957 face="黑体">list，set，zset，hash </font>**等数据结构的存储。
-4. **<font color=#159957 face="黑体">Redis </font>**支持数据的备份，即 **<font color=#159957 face="黑体">master-slave</font>** 模式的数据备份。
+1. **<span color=#159957 face="黑体">Redis </span>**与其他 **<span color=#159957 face="黑体">key-value</span>** 缓存产品有以下三个特点：
+2. **<span color=#159957 face="黑体">Redis </span>**支持数据的持久化，可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用。
+3. **<span color=#159957 face="黑体">Redis </span>**不仅仅支持简单的 **<span color=#159957 face="黑体">key-value</span>**类型的数据，同时还提供 **<span color=#159957 face="黑体">list，set，zset，hash </span>**等数据结构的存储。
+4. **<span color=#159957 face="黑体">Redis </span>**支持数据的备份，即 **<span color=#159957 face="黑体">master-slave</span>** 模式的数据备份。
 
 ## 3.3.优势
 
-- 性能极高 – **<font color=#159957 face="黑体">Redis </font>**能读的速度是110000次/s,写的速度是81000次/s 。
-- 丰富的数据类型 – **<font color=#159957 face="黑体">Redis </font>**支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。
-- 原子 – **<font color=#159957 face="黑体">Redis </font>**的所有操作都是原子性的，同时**<font color=#159957 face="黑体">Redis </font>**还支持对几个操作全并后的原子性执行。
-- 丰富的特性 – **<font color=#159957 face="黑体">Redis </font>**还支持 publish/subscribe, 通知, key 过期等等特性。
+- 性能极高 – **<span color=#159957 face="黑体">Redis </span>**能读的速度是110000次/s,写的速度是81000次/s 。
+- 丰富的数据类型 – **<span color=#159957 face="黑体">Redis </span>**支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。
+- 原子 – **<span color=#159957 face="黑体">Redis </span>**的所有操作都是原子性的，同时**<span color=#159957 face="黑体">Redis </span>**还支持对几个操作全并后的原子性执行。
+- 丰富的特性 – **<span color=#159957 face="黑体">Redis </span>**还支持 publish/subscribe, 通知, key 过期等等特性。
 
 # 4.Redis使用场景
 
-> 目前在互联网公司， **<font color=#159957 face="黑体">Redis </font>** 使用非常广泛，我日常工作中，会用它做爬虫采集系统中队列使用，还有在后台管理系统中做分布式，存储 token 使用。
+> 目前在互联网公司， **<span color=#159957 face="黑体">Redis </span>** 使用非常广泛，我日常工作中，会用它做爬虫采集系统中队列使用，还有在后台管理系统中做分布式，存储 token 使用。
 
-1、**<font color=#159957 face="黑体">缓存</font>**
+1、**<span color=#159957 face="黑体">缓存</span>**
 
-缓存现在几乎是所有中大型网站都在用的必杀技，合理的利用缓存不仅能够提升网站访问速度，还能大大降低数据库的压力。**<font color=#159957 face="黑体">Redis </font>** 提供了键过期功能，也提供了灵活的键淘汰策略，所以，现在 **<font color=#159957 face="黑体">Redis </font>** 用在缓存的场合非常多。
+缓存现在几乎是所有中大型网站都在用的必杀技，合理的利用缓存不仅能够提升网站访问速度，还能大大降低数据库的压力。**<span color=#159957 face="黑体">Redis </span>** 提供了键过期功能，也提供了灵活的键淘汰策略，所以，现在 **<span color=#159957 face="黑体">Redis </span>** 用在缓存的场合非常多。
 
-2、**<font color=#159957 face="黑体">排行榜</font>**
+2、**<span color=#159957 face="黑体">排行榜</span>**
 
-很多网站都有排行榜应用的，如京东的月度销量榜单、商品按时间的上新排行榜等。**<font color=#159957 face="黑体">Redis </font>** 提供的有序集合数据类构能实现各种复杂的排行榜应用。
+很多网站都有排行榜应用的，如京东的月度销量榜单、商品按时间的上新排行榜等。**<span color=#159957 face="黑体">Redis </span>** 提供的有序集合数据类构能实现各种复杂的排行榜应用。
 
-3、**<font color=#159957 face="黑体">计数器</font>**
+3、**<span color=#159957 face="黑体">计数器</span>**
 
-什么是计数器，如电商网站商品的浏览量、视频网站视频的播放数等。为了保证数据实时效，每次浏览都得给+1，并发量高时如果每次都请求数据库操作无疑是种挑战和压力。**<font color=#159957 face="黑体">Redis </font>** 提供的 **<font color=#159957 face="黑体">incr</font>** 命令来实现计数器功能，内存操作，性能非常好，非常适用于这些计数场景。
+什么是计数器，如电商网站商品的浏览量、视频网站视频的播放数等。为了保证数据实时效，每次浏览都得给+1，并发量高时如果每次都请求数据库操作无疑是种挑战和压力。**<span color=#159957 face="黑体">Redis </span>** 提供的 **<span color=#159957 face="黑体">incr</span>** 命令来实现计数器功能，内存操作，性能非常好，非常适用于这些计数场景。
 
-4、**<font color=#159957 face="黑体">分布式会话</font>**
+4、**<span color=#159957 face="黑体">分布式会话</span>**
 
 集群模式下，在应用不多的情况下一般使用容器自带的 session 复制功能就能满足，当应用增多相对复杂的系统中，一般都会搭建以 Redis 等内存数据库为中心的 session 服务，session 不再由容器管理，而是由 session 服务及内存数据库管理。
 
-5、**<font color=#159957 face="黑体">分布式锁</font>**
+5、**<span color=#159957 face="黑体">分布式锁</span>**
 
 在很多互联网公司中都使用了分布式技术，分布式技术带来的技术挑战是对同一个资源的并发访问，如全局ID、减库存、秒杀等场景，并发量不大的场景可以使用数据库的悲观锁、乐观锁来实现，但在并发量高的场合中，利用数据库锁来控制资源的并发访问是不太理想的，大大影响了数据库的性能。可以利用 Redis 的setnx功能来编写分布式的锁，如果设置返回1说明获取锁成功，否则获取锁失败，实际应用中要考虑的细节要更多。
 
-6、**<font color=#159957 face="黑体">社交网络</font>** 
+6、**<span color=#159957 face="黑体">社交网络</span>** 
 
 点赞、踩、关注/被关注、共同好友等是社交网站的基本功能，社交网站的访问量通常来说比较大，而且传统的关系数据库类型不适合存储这种类型的数据，Redis提供的哈希、集合等数据结构能很方便的的实现这些功能。
 
-7、**<font color=#159957 face="黑体">最新列表</font>**
+7、**<span color=#159957 face="黑体">最新列表</span>**
 
 Redis列表结构，LPUSH可以在列表头部插入一个内容ID作为关键字，LTRIM可用来限制列表的数量，这样列表永远为N个ID，无需查询最新的列表，直接根据ID去到对应的内容页即可。
 
-8、**<font color=#159957 face="黑体">消息系统</font>**
+8、**<span color=#159957 face="黑体">消息系统</span>**
 
 消息队列是大型网站必用中间件，如ActiveMQ、RabbitMQ、Kafka 等流行的消息队列中间件，主要用于业务解耦、流量削峰及异步处理实时性低的业务。Redis 提供了发布/订阅及阻塞队列功能，能实现一个简单的消息队列系统。另外，这个不能和专业的消息中间件相比。
 
@@ -213,7 +213,7 @@ Redis **key** 值是二进制安全的，这意味着可以用任何二进制序
 关于key的几条规则：
 
 - 太长的键值不是个好主意，例如1024字节的键值就不是个好主意，不仅因为消耗内存，而且在数据中查找这类键值的计算成本很高。
-- 太短的键值通常也不是好主意，如果你要用”u:1000:pwd”来代替”user:1000:password”，这没有什么问题，但后者更易阅读，并且由此增加的空间消耗相对于**<font color=#159957 face="黑体">key object</font>**和**<font color=#159957 face="黑体">value object</font>**本身来说很小。当然，没人阻止您一定要用更短的键值节省一丁点儿空间。
+- 太短的键值通常也不是好主意，如果你要用”u:1000:pwd”来代替”user:1000:password”，这没有什么问题，但后者更易阅读，并且由此增加的空间消耗相对于**<span color=#159957 face="黑体">key object</span>**和**<span color=#159957 face="黑体">value object</span>**本身来说很小。当然，没人阻止您一定要用更短的键值节省一丁点儿空间。
 - 最好坚持一种模式。例如：”object-type:uid:field”就是个不错的注意，像这样”user:1000:password”。我喜欢对多单词的字段名中加上一个点，就像这样：”comment:q1234:reply.to”。
 
 
@@ -227,7 +227,7 @@ Redis **key** 值是二进制安全的，这意味着可以用任何二进制序
 
 
 
-- 基本的操作方式**<font color=#159957 face="黑体">get 和 set </font>**方式
+- 基本的操作方式**<span color=#159957 face="黑体">get 和 set </span>**方式
 
 ```bash
 > set mykey somevalue
@@ -253,10 +253,10 @@ OK
 (integer) 152
 ```
 
-**<font color=#159957 face="黑体">INCR </font>** 命令将字符串解析成整型，将其加一，再将结果保存成新的字符串，类似的命令还有 **<font color=#159957 face="黑体">INCRBY</font>** , **<font color=#159957 face="黑体">DECR</font>** 和 **<font color=#159957 face="黑体">DECRBY</font>** 。
+**<span color=#159957 face="黑体">INCR </span>** 命令将字符串解析成整型，将其加一，再将结果保存成新的字符串，类似的命令还有 **<span color=#159957 face="黑体">INCRBY</span>** , **<span color=#159957 face="黑体">DECR</span>** 和 **<span color=#159957 face="黑体">DECRBY</span>** 。
 
 
-还有一个有趣的命令， **<font color=#159957 face="黑体">GETSET</font>**  命令：设置新值，返回原值。这个操作有什么用？在我们需要保证原子性操作时
+还有一个有趣的命令， **<span color=#159957 face="黑体">GETSET</span>**  命令：设置新值，返回原值。这个操作有什么用？在我们需要保证原子性操作时
 
 MSET 和 MGET 是批量操作
 
@@ -269,11 +269,11 @@ OK
 3) "30"
 ```
 
-**<font color=#159957 face="黑体">MGET</font>** 命令返回由值组成的数组。
+**<span color=#159957 face="黑体">MGET</span>** 命令返回由值组成的数组。
 
 - 修改和查询存在操作
 
-> **<font color=#159957 face="黑体">exists</font>**:判断键是否存在，**<font color=#159957 face="黑体">del</font>**：删除指定键
+> **<span color=#159957 face="黑体">exists</span>**:判断键是否存在，**<span color=#159957 face="黑体">del</span>**：删除指定键
 
 ```bash
 > set mykey hello
@@ -286,7 +286,7 @@ OK
 (integer) 0
 ```
 
-> **<font color=#159957 face="黑体">TYPE</font>** 命令返回key对应的存储类型
+> **<span color=#159957 face="黑体">TYPE</span>** 命令返回key对应的存储类型
 
 ```bash
 > set mykey x
@@ -301,7 +301,7 @@ none
 
 - Redis超时
 
-对 **key** 设置**<font color=#159957 face="黑体">超时</font>**。精度可以使用毫秒或秒。
+对 **key** 设置**<span color=#159957 face="黑体">超时</span>**。精度可以使用毫秒或秒。
 
 ```bash
 > set key some-value
@@ -314,7 +314,7 @@ OK
 (nil)
 ```
 
-使用了 **<font color=#159957 face="黑体">EXPIRE</font>** 来设置超时时间(也可以再次调用这个命令来改变超时时间，使用 **<font color=#159957 face="黑体">PERSIST</font>** 命令去除超时时间 )。我们也可以在创建值的时候设置超时时间:
+使用了 **<span color=#159957 face="黑体">EXPIRE</span>** 来设置超时时间(也可以再次调用这个命令来改变超时时间，使用 **<span color=#159957 face="黑体">PERSIST</span>** 命令去除超时时间 )。我们也可以在创建值的时候设置超时时间:
 
 ```bash
 > set key 100 ex 10
@@ -323,13 +323,13 @@ OK
 (integer) 9
 ```
 
-**<font color=#159957 face="黑体">TTL</font>** 命令用来查看key对应的值剩余存活时间。
+**<span color=#159957 face="黑体">TTL</span>** 命令用来查看key对应的值剩余存活时间。
 
 ## 6.3.列表（Lists）
 
-> 值得注意的：**<font color=#159957 face="黑体">Redis lists</font>** 基于 **<font color=#159957 face="黑体">Linked Lists</font>** 实现。
+> 值得注意的：**<span color=#159957 face="黑体">Redis lists</span>** 基于 **<span color=#159957 face="黑体">Linked Lists</span>** 实现。
 
-**<font color=#159957 face="黑体">Redis 列表</font>**是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）
+**<span color=#159957 face="黑体">Redis 列表</span>**是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）
 
 一个列表最多可以包含 232 - 1 个元素 (4294967295, 每个列表超过40亿个元素)。
 
@@ -348,10 +348,10 @@ OK
 3) "B"
 ```
 
-从右边(尾部)插入俩个元素，左边(头部)插入一个元素，**<font color=#159957 face="黑体">LRANGE </font>**打印所有(0,-1)元素。
+从右边(尾部)插入俩个元素，左边(头部)插入一个元素，**<span color=#159957 face="黑体">LRANGE </span>**打印所有(0,-1)元素。
 
 
-- **<font color=#159957 face="黑体">Redis Lists</font>**常用指令
+- **<span color=#159957 face="黑体">Redis Lists</span>**常用指令
 
 > BLPOP key1 [key2 ] timeout 
 > 移出并获取列表的第一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。
@@ -368,7 +368,7 @@ OK
 > LINSERT key BEFORE|AFTER pivot value 
 在列表的元素前或者后插入元素
 
-说明：**<font color=#159957 face="黑体">Redis Linsert</font>** 命令用于在列表的元素前或者后插入元素。当指定元素不存在于列表中时，不执行任何操作。当列表不存在时，被视为空列表，不执行任何操作。如果 key 不是列表类型，返回一个错误。
+说明：**<span color=#159957 face="黑体">Redis Linsert</span>** 命令用于在列表的元素前或者后插入元素。当指定元素不存在于列表中时，不执行任何操作。当列表不存在时，被视为空列表，不执行任何操作。如果 key 不是列表类型，返回一个错误。
 
 **实例：**
 
@@ -434,7 +434,7 @@ count = 0 : 移除表中所有与 VALUE 相等的值。
 
 ## 6.4.哈希(Hash)
 
-> **<font color=#159957 face="黑体">Redis hash </font>** 是一个 **<font color=#159957 face="黑体">string </font>**类型的 **<font color=#159957 face="黑体">field </font>** 和 **<font color=#159957 face="黑体">value </font>** 的映射表，**<font color=#159957 face="黑体">hash </font>** 特别适合用于存储对象。
+> **<span color=#159957 face="黑体">Redis hash </span>** 是一个 **<span color=#159957 face="黑体">string </span>**类型的 **<span color=#159957 face="黑体">field </span>** 和 **<span color=#159957 face="黑体">value </span>** 的映射表，**<span color=#159957 face="黑体">hash </span>** 特别适合用于存储对象。
 
 Redis 中每个 hash 可以存储 232 - 1 键值对（40多亿）。
 
@@ -474,9 +474,9 @@ Redis 中每个 hash 可以存储 232 - 1 键值对（40多亿）。
 
 ## 6.5.集合(Set)
 
-Redis 的 **<font color=#159957 face="黑体">Set </font>** 是 **<font color=#159957 face="黑体">String </font>** 类型的无序集合。集合成员是唯一的，这就意味着集合中不能出现重复的数据。
+Redis 的 **<span color=#159957 face="黑体">Set </span>** 是 **<span color=#159957 face="黑体">String </span>** 类型的无序集合。集合成员是唯一的，这就意味着集合中不能出现重复的数据。
 
-Redis 中**<font color=#159957 face="黑体">集合 </font>**是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。
+Redis 中**<span color=#159957 face="黑体">集合 </span>**是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。
 
 ```
 序号	命令及描述
@@ -519,7 +519,7 @@ Redis 中**<font color=#159957 face="黑体">集合 </font>**是通过哈希表�
 
 
 
-1. Redis **<font color=#159957>有序集合 </font>**和**<font color=#159957>集合 </font>**一样也是 string 类型元素的集合,且不允许重复的成员。
+1. Redis **<span color=#159957>有序集合 </span>**和**<span color=#159957>集合 </span>**一样也是 string 类型元素的集合,且不允许重复的成员。
 2. 不同的是每个元素都会关联一个 double 类型的分数。redis 正是通过分数来为集合中的成员进行从小到大的排序。
 3. 有序集合的成员是唯一的,但分数(score)却可以重复。
 4. 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是O(1)。 集合中最大的成员数为 232 - 1 (4294967295, 每个集合可存储40多亿个成员)。
@@ -575,7 +575,7 @@ Redis 中**<font color=#159957 face="黑体">集合 </font>**是通过哈希表�
 # 7.Redis常用
 
 
-> 如果你读到在这里，相信你对 Redis 已经有了一定了解，入门就先简单学到这里，下篇一起上**<font color=#159957 face="黑体">青铜</font>**。
+> 如果你读到在这里，相信你对 Redis 已经有了一定了解，入门就先简单学到这里，下篇一起上**<span color=#159957 face="黑体">青铜</span>**。
 
 
 > 后面的篇章，还将继续介绍 Redis 的一些高级用法，缓存击穿、缓存雪崩，源码分析等。看后不忘三连，还有需要更多技术博文可以留言催更。
