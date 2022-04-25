@@ -1,22 +1,22 @@
 ---
-# 这是侧边栏索引
+## 这是侧边栏索引
 index: 1
-# 这是页面的图标
+## 这是页面的图标
 icon: page
-# 这是文章的标题
+## 这是文章的标题
 title: rodert单排学习redis入门【黑铁】
-# 设置作者
+## 设置作者
 author: Wang Shiyu
-# 设置写作时间
+## 设置写作时间
 date: 2022-04-25
-# 一个页面可以有多个分类
+## 一个页面可以有多个分类
 category:
   - redis
-# 一个页面可以有多个标签
+## 一个页面可以有多个标签
 tag:
   - redis
   - 单排学习redis
-# 此页面会出现在首页的文章板块中
+## 此页面会出现在首页的文章板块中
 star: true
 ---
 
@@ -34,7 +34,7 @@ redis入门
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200613232629668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
 
 @[toc]
-# 前言
+## 前言
 
 > 声明：参考来源互联网，有任何争议可以留言。站在前人的肩上，我们才能看的更远。
 
@@ -54,13 +54,13 @@ redis入门
 
 > 中文官网：http://www.redis.cn/
 
-# 1.NoSql(not only sql)
+## 1.NoSql(not only sql)
 
 指非关系型数据库，不支持sql语句，nosql中存储的数据是KV形式
 
 常见的NoSQL产品有：Mongodb、Redis、Hbase hadoop、Cassandra hadoop。
 
-# 2.Redis入门
+## 2.Redis入门
 
 > 这是一些redis介绍，做一些简单了解即可。
 
@@ -75,8 +75,8 @@ redis 是一个 **<span color=#159957 face="黑体">key-value</span>** 存储系
 
 
 
-# 3.Redis特性
-## 3.1.性能
+## 3.Redis特性
+### 3.1.性能
 
 下面是官方的bench-mark数据：
 测试完成了 50 个并发执行 100000 个请求。
@@ -85,7 +85,7 @@ Linux box 是运行 Linux 2.6 , 这是 X3320 Xeon 2.5 ghz。
 文本执行使用 loopback 接口(127.0.0.1)。
 结果:读的速度是 **110000次/s** ,写的速度是 **81000次/s** 。
 
-## 3.2.特性
+### 3.2.特性
 
 
 
@@ -94,14 +94,14 @@ Linux box 是运行 Linux 2.6 , 这是 X3320 Xeon 2.5 ghz。
 3. **<span color=#159957 face="黑体">Redis </span>**不仅仅支持简单的 **<span color=#159957 face="黑体">key-value</span>**类型的数据，同时还提供 **<span color=#159957 face="黑体">list，set，zset，hash </span>**等数据结构的存储。
 4. **<span color=#159957 face="黑体">Redis </span>**支持数据的备份，即 **<span color=#159957 face="黑体">master-slave</span>** 模式的数据备份。
 
-## 3.3.优势
+### 3.3.优势
 
 - 性能极高 – **<span color=#159957 face="黑体">Redis </span>**能读的速度是110000次/s,写的速度是81000次/s 。
 - 丰富的数据类型 – **<span color=#159957 face="黑体">Redis </span>**支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。
 - 原子 – **<span color=#159957 face="黑体">Redis </span>**的所有操作都是原子性的，同时**<span color=#159957 face="黑体">Redis </span>**还支持对几个操作全并后的原子性执行。
 - 丰富的特性 – **<span color=#159957 face="黑体">Redis </span>**还支持 publish/subscribe, 通知, key 过期等等特性。
 
-# 4.Redis使用场景
+## 4.Redis使用场景
 
 > 目前在互联网公司， **<span color=#159957 face="黑体">Redis </span>** 使用非常广泛，我日常工作中，会用它做爬虫采集系统中队列使用，还有在后台管理系统中做分布式，存储 token 使用。
 
@@ -137,9 +137,9 @@ Redis列表结构，LPUSH可以在列表头部插入一个内容ID作为关键�
 
 消息队列是大型网站必用中间件，如ActiveMQ、RabbitMQ、Kafka 等流行的消息队列中间件，主要用于业务解耦、流量削峰及异步处理实时性低的业务。Redis 提供了发布/订阅及阻塞队列功能，能实现一个简单的消息队列系统。另外，这个不能和专业的消息中间件相比。
 
-# 5.安装
-## 5.1.单机安装
-### 5.1.1.windows下
+## 5.安装
+### 5.1.单机安装
+#### 5.1.1.windows下
 redis 开源在 github 上
 
 - 下载，解压
@@ -174,7 +174,7 @@ Redis 支持 32 位和 64 位。这个需要根据你系统平台的实际情况
 
 > get myKey
 
-### 5.1.2.linux下
+#### 5.1.2.linux下
 
 > linux 和 windows 下类似，启动方式参考上文
 
@@ -185,12 +185,12 @@ $ cd redis-2.8.17
 $ make
 ```
 
-# 6.五类数据结构
-## 6.0.说明
+## 6.五类数据结构
+### 6.0.说明
 
 > 类型中会涉及到很多的 Redis 操作命令，一定耐心看完，优化的基础是要了解。
 
-## 6.1.介绍
+### 6.1.介绍
 
 Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 它支持多种类型的数据结构，如 字符串（strings）， 散列（hashes）， 列表（lists）， 集合（sets）， 有序集合（sorted sets） 与范围查询， bitmaps， hyperloglogs 和 地理空间（geospatial） 索引半径查询。 Redis 内置了 复制（replication），LUA脚本（Lua scripting）， LRU驱动事件（LRU eviction），事务（transactions） 和不同级别的 磁盘持久化（persistence）， 并通过 Redis哨兵（Sentinel）和自动 分区（Cluster）提供高可用性（high availability）。
 
@@ -200,7 +200,7 @@ Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统�
 
 对于下面操作，可以通过 redis-cli 工具连接使用
 
-## 6.2.Redis keys
+### 6.2.Redis keys
 
 
 
@@ -217,7 +217,7 @@ Redis **key** 值是二进制安全的，这意味着可以用任何二进制序
 - 最好坚持一种模式。例如：”object-type:uid:field”就是个不错的注意，像这样”user:1000:password”。我喜欢对多单词的字段名中加上一个点，就像这样：”comment:q1234:reply.to”。
 
 
-## 6.2.字符串（strings）
+### 6.2.字符串（strings）
 
 > 二进制安全的字符串
 
@@ -325,7 +325,7 @@ OK
 
 **<span color=#159957 face="黑体">TTL</span>** 命令用来查看key对应的值剩余存活时间。
 
-## 6.3.列表（Lists）
+### 6.3.列表（Lists）
 
 > 值得注意的：**<span color=#159957 face="黑体">Redis lists</span>** 基于 **<span color=#159957 face="黑体">Linked Lists</span>** 实现。
 
@@ -432,7 +432,7 @@ count = 0 : 移除表中所有与 VALUE 相等的值。
 > RPUSHX key value
 为已存在的列表添加值
 
-## 6.4.哈希(Hash)
+### 6.4.哈希(Hash)
 
 > **<span color=#159957 face="黑体">Redis hash </span>** 是一个 **<span color=#159957 face="黑体">string </span>**类型的 **<span color=#159957 face="黑体">field </span>** 和 **<span color=#159957 face="黑体">value </span>** 的映射表，**<span color=#159957 face="黑体">hash </span>** 特别适合用于存储对象。
 
@@ -472,7 +472,7 @@ Redis 中每个 hash 可以存储 232 - 1 键值对（40多亿）。
 
 > 参考:https://www.runoob.com/redis/redis-hashes.html
 
-## 6.5.集合(Set)
+### 6.5.集合(Set)
 
 Redis 的 **<span color=#159957 face="黑体">Set </span>** 是 **<span color=#159957 face="黑体">String </span>** 类型的无序集合。集合成员是唯一的，这就意味着集合中不能出现重复的数据。
 
@@ -514,7 +514,7 @@ Redis 中**<span color=#159957 face="黑体">集合 </span>**是通过哈希表�
 
 > 参考：https://www.runoob.com/redis/redis-sets.html
 
-## 6.6.有序集合(sorted set)
+### 6.6.有序集合(sorted set)
 
 
 
@@ -572,7 +572,7 @@ Redis 中**<span color=#159957 face="黑体">集合 </span>**是通过哈希表�
 迭代有序集合中的元素（包括元素成员和元素分值）
 ```
 
-# 7.Redis常用
+## 7.Redis常用
 
 
 > 如果你读到在这里，相信你对 Redis 已经有了一定了解，入门就先简单学到这里，下篇一起上**<span color=#159957 face="黑体">青铜</span>**。
