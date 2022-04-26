@@ -3,6 +3,8 @@ import themeConfig from "./themeConfig";
 
 export default defineHopeConfig({
   base: "/",
+  title: "JavaPub",//默认信息
+  description: "专注于面试、副业，技术人的成长记录",//默认信息
 
   head: [
     [
@@ -12,7 +14,42 @@ export default defineHopeConfig({
         href: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
       },
     ],
+    //被搜索引擎搜索标签
+    [
+      "meta",
+      {
+        name: 'keywords',
+        content: 'JavaPub,java,爬虫,毕业设计,python,计算机毕业设计,elasticsearch,springboot',
+      }
+    ],
+    //添加百度站长的自动推送代码
+    [
+      "script",
+      {
+        src: "/assets/js/autopush-baidu.js"
+      }
+    ],  
+    //360站长的验证代码
+    [
+      "meta",
+      {
+        name: "360-site-verification",
+        content: "63b223c45248d2ea87cb9b1042148dda",
+      },
+    ],
+    // 添加360站长的自动推送代码
+    [
+      "script",
+      {
+        src: "/assets/js/autopush-360.js",
+      },
+    ],
+    
   ],
+  // <meta name="360-site-verification" content="63b223c45248d2ea87cb9b1042148dda" />
+
+  
+  
 
   // locales: {
   //   "/": {
