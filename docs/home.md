@@ -102,6 +102,10 @@ copyright: false
 footer: MIT Licensed | Copyright © 2022-present Wang Shiyu
 ---
 
+
+[GItHub](https://github.com/Rodert) | [GitEE](https://gitee.com/rodert)
+
+
 # 最少必要面试题
 
 - [目录](willbe/)
@@ -116,7 +120,6 @@ footer: MIT Licensed | Copyright © 2022-present Wang Shiyu
 
 [【JVM】10道不得不会的JVM面试题](willbe/jvm-interview-must.md)
 
-[GItHub](https://github.com/Rodert) | [GitEE](https://gitee.com/rodert)
 
 ---
 
@@ -125,9 +128,18 @@ footer: MIT Licensed | Copyright © 2022-present Wang Shiyu
 - [目录](project/game/)
 
 
+
 [Java实现一个坦克大战的小游戏【附源码】](project/game/tank-game.md)
 
 [Java实现植物大战僵尸小游戏【附源码】](project/game/plants-vs-zombies-game.md)
+
+[Java实现捕鱼达人小游戏【附源码】](project/game/catch-fish-game.md)
+
+[Java实现贪吃蛇小游戏【附源码】](project/game/gluttonous-snake-game.md)
+
+[Java实现一个打飞机的小游戏【附源码】](project/game/hit-aircraft-game.md)
+
+
 
 ---
 
