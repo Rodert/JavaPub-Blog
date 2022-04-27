@@ -11,7 +11,7 @@ projects:
   - icon: project
     name: 小游戏
     desc: 人人可上手的小游戏
-    link: /game/
+    link: /project/game/
 
   - icon: friend
     name: 面试题

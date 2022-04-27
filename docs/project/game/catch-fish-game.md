@@ -248,6 +248,8 @@ public class StartGame {
 [Java 实现 植物大战僵尸 小游戏【附源码】](/project/game)
 
 
+## [查看更多博主首页更多实战项目 >>>](https://blog.csdn.net/qq_40374604/category_11708266.html)
+
 公众号二维码
 
 ![](/accounts/wechat.jpg)

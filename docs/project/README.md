@@ -2,6 +2,8 @@
 
 致力于人人可上手
 
+![image](https://tvax1.sinaimg.cn/large/007F3CC8ly1h1oodtwh37j30pt0d3aca.jpg)
+
 [toc]
 
 # [小游戏](game/)
