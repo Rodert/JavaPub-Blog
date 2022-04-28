@@ -35,7 +35,8 @@ MySql
 
 ---
 
-推荐一篇非常不错的文章，阅读后更有利于了解MySQL【B树和B+树的区别】：https://mp.weixin.qq.com/s/RWkc2lNarKnn8Dc0HrP58g
+推荐一篇非常不错的文章，阅读后更有利于了解MySQL【B树和B+树的区别】：
+<https://mp.weixin.qq.com/s/RWkc2lNarKnn8Dc0HrP58g/>
 
 ---
 
