@@ -40,7 +40,7 @@ star: true
 
 > 点赞再看，养成习惯
 
-适合人群：初级学习者和爱好者，下面有展示图。计算机毕业设计
+适合人群：初级学习者和爱好者，下面有展示图。计算机毕业设计,✌  简历模板、学习资料、面试题库、技术互助【关注我，都给你】
 
 @[toc]
 
@@ -558,7 +558,7 @@ https://tva1.sinaimg.cn/large/007F3CC8ly1h1pcxykg0bg30sc0jdtpl.gif
 
 
 
-## [查看更多博主首页更多实战项目 >>>](https://blog.csdn.net/qq_40374604/category_11708266.html)
+## [查看更多博主首页更多实战项目 >>>](https://blog.csdn.net/qq_40374604/category_11789121.html)
 
 
 **项目源码获取方法**

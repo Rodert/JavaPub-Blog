@@ -12,8 +12,6 @@
 
 [Java实现一个打飞机的小游戏【附源码】](/project/game/hit-aircraft-game.md)
 
-[俄罗斯方块【附源码】](/project/game/tetris-game.md)
-
 [3D赛车【附源码】](/project/game/3d-racing-game.md)
 
 [小鸟飞行游戏【附源码】](/project/game/bird-flying-game.md)
@@ -23,6 +21,9 @@
 [吃豆人游戏【附源码】](/project/game/pac-man-game.md)
 
 [超级马里奥【附源码】](/project/game/super-mario-game.md)
+
+[俄罗斯方块【附源码】](/project/game/tetris-game.md)
+
 
 
 
