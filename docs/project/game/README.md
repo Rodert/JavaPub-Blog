@@ -26,9 +26,14 @@
 
 
 
+[中国象棋【附源码】](/project/game/chinese-chess-game.md)
+
+
+
 
 
 > 更多项目敬请期待...
+
 
 
 
@@ -39,4 +44,5 @@
 个人微信
 
 ![](/accounts/QRcode.jpg)
+
 
