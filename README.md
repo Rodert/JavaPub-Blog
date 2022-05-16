@@ -70,7 +70,7 @@ https://rodert-java-pub-blog-cq4tgfqik-rodert.vercel.app/ui
 # 项目结构介绍
 
 
-`yarn.lock` yarn管理，最好不熬手动修改，可能破坏某些东西
+`yarn.lock` yarn管理，最好不要手动修改，可能破坏某些东西
 
 `docs/zh` 主题样式参考
 
