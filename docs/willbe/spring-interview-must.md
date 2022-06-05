@@ -39,6 +39,37 @@ JVM
 
 ## 1. 什么是 Spring 框架？Spring 框架有哪些主要模块？
 
+Spring是针对bean的生命周期进行管理的轻量级容器，一个控制反转和面向切面的容器框架
+
+Spring有七大功能模块：
+
+1、Core
+
+Core模块是Spring的核心类库，Core实现了IOC功能。
+
+2、AOP
+
+Apring AOP模块是Spring的AOP库，提供了AOP（拦截器）机制，并提供常见的拦截器，供用户自定义和配置。
+
+3、orm
+
+提供对常用ORM框架的管理和支持，hibernate、mybatis等。
+
+4、Dao
+
+Spring提供对JDBC的支持，对JDBC进行封装。
+
+5、Web
+
+对Struts2的支持。
+
+6、Context
+
+Context模块提供框架式的Bean的访问方式，其它程序可以通过Context访问Spring的Bean资源，相当于资源注入。
+
+7、MVC
+
+MVC模块为spring提供了一套轻量级的MVC实现，即Spring MVC。
 
 
 ## 2. 使用 Spring 框架能带来哪些好处？
