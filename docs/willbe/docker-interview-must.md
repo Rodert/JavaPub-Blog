@@ -45,16 +45,27 @@ https://www.jianshu.com/p/825dbf39af9e
 Docker 是一种流行的开源软件平台，可简化创建、管理、运行和分发应用程序的过程。它使用容器来打包应用程序及其依赖项。我们也可以将容器视为 Docker 镜像的运行时实例。
 
 
-### Docker 和虚拟机有什么不同？
+### 2. Docker 和虚拟机有什么不同？
 
 Docker 是轻量级的沙盒，在其中运行的只是应用，虚拟机里面还有额外的系统。
 
-### 2. 什么是 DockerFile？
+### 3. 什么是 DockerFile？
 
 Dockerfile 是一个文本文件，其中包含我们需要运行以构建 Docker 镜像的所有命令，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。Docker 使用 Dockerfile 中的指令自动构建镜像。我们可以 `docker build` 用来创建按顺序执行多个命令行指令的自动构建。
 
+**一些最常用的指令如下：**
 
-### 3. 使用Docker Compose时如何保证容器A先于容器B运行？
+```bash
+FROM ：使用 FROM 为后续的指令建立基础映像。在所有有效的 Dockerfile 中， FROM 是第一条指令。
+
+LABEL： LABEL 指令用于组织项目映像，模块，许可等。在自动化布署方面 LABEL 也有很大用途。在 LABEL 中指定一组键值对，可用于程序化配置或布署 Docker 。
+
+RUN： RUN 指令可在映像当前层执行任何命令并创建一个新层，用于在映像层中添加功能层，也许最来的层会依赖它。
+
+CMD： 使用 CMD 指令为执行的容器提供默认值。在 Dockerfile 文件中，若添加多个 CMD 指令，只有最后的 CMD 指令运行。
+```
+
+### 4. 使用Docker Compose时如何保证容器A先于容器B运行？
 
 > Docker Compose 是一个用来定义和运行复杂应用的Docker工具。一个使用Docker容器的应用，通常由多个容器组成。使用Docker Compose不再需要使用shell脚本来启动容器。Compose 通过一个配置文件来管理多个Docker容器。简单理解：Docker Compose 是docker的管理工具。
 
@@ -81,7 +92,7 @@ services:
 用 `docker-compose up` 命令将按照我们指定的依赖顺序启动和运行服务。
 
 
-### 一个完整的Docker由哪些部分组成?
+### 5. 一个完整的Docker由哪些部分组成?
 
 - DockerClient 客户端
 - Docker Daemon 守护进程
@@ -89,10 +100,10 @@ services:
 - DockerContainer 容器 
 
 
-### docker常用命令
+### 6. docker常用命令
 
 > 命令建议在本地安装做一个实操，记忆会更深刻。
-> 也可以克隆基于docker的俩万（springboot+vue）项目练手：<https://gitee.com/rodert/liawan-vue>
+> 也可以克隆基于docker的俩万（springboot+vue）项目练手，提供视频+完善文档。地址：<https://gitee.com/rodert/liawan-vue>
 
 
 1. 查看本地主机的所用镜像：`docker images``
@@ -101,7 +112,7 @@ services:
 4. 下载指定版本的镜像：`docker pull mysql:5.7``
 5. 删除镜像：`docker rmi -f 镜像id 镜像id 镜像id``
 
-### 描述 Docker 容器的生命周期。
+### 7. 描述 Docker 容器的生命周期。
 
 Docker 容器经历以下阶段：
 
@@ -115,7 +126,7 @@ Docker 容器经历以下阶段：
 - 杀死容器
 - 销毁容器
 
-### docker容器之间怎么隔离?
+### 8. docker容器之间怎么隔离?
 
 > 这是一道涉猎很广泛的题目，理解性阅读。
 
@@ -128,7 +139,7 @@ Linux中的PID、IPC、网络等资源是全局的，而Linux的NameSpace机制�
 有了这两项技术，容器看起来就真的像是独立的操作系统了。
 
 
-
+> 强烈建议大家实操，才能更好的理解docker。
 
 低谷蓄力
 
