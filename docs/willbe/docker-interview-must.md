@@ -36,7 +36,6 @@ Docker
 
 # Docker
 
-https://www.jianshu.com/p/825dbf39af9e
 
 以下是一些docker的基础面试题，下一篇docker进阶面试题。本系列《最少必要面试题》
 
@@ -165,5 +164,5 @@ Linux中的PID、IPC、网络等资源是全局的，而Linux的NameSpace机制�
 [10道不得不会的 MyBatis 面试题](https://blog.csdn.net/qq_40374604/category_11740063.html)
 
 
-![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h32gkgw3jrj30je0aignk.jpg)
+
 
