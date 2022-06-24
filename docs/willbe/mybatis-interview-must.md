@@ -120,9 +120,9 @@ MappedStatement：MappedStatement维护了一条 <select|update|delete|insert>�
 </insert>
 ```
 
-当 Mybatis 解析 xml节点是，读到 `insert` 有配置时，会判断是否 有配置 `useGeneratedKeys`，如果有则会使用 `Jdbc3KeyGenerator` 作为sql回显，否则会以 `NoKeyGenerator` 作为主键回显。
+当 Mybatis 解析 xml节点时，读到 `insert` 有配置时，会判断是否 有配置 `useGeneratedKeys`，如果有则会使用 `Jdbc3KeyGenerator` 作为sql回显，否则会以 `NoKeyGenerator` 作为主键回显。
 
-底层封装了JDBC获取自增主键，即当使用 prepareStatement 或者 Statement时候，可以通过 `getGeneratedKeys` 获取 当条插入语句的自增而成的主键。例子
+底层封装了JDBC获取自增主键，即当使用 prepareStatement 或者 Statement时候，可以通过 `getGeneratedKeys` 获取这条插入语句的自增而成的主键。例子
 
 ```java
     Connection conn = DriverManager.getConnection(url, "root", "123456");
@@ -150,7 +150,7 @@ Mybatis 提供了9种动态sql标签： **trim | where | set | foreach | if | ch
 
 **科普：**
 
-OGNL 是 Object-Graph Navigation Language 的缩写，对象-图行导航语言。例如 `#{}` 语法。
+OGNL 是 Object-Graph Navigation Language 的缩写，对象图导航语言。例如 `#{}` 语法。
 
 OGNL 作用是在对象和视图之间做数据的交互，可以存取对象的属性和调用对象的方法，通过表达式可以迭代出整个对象的结构图。
 
@@ -223,7 +223,7 @@ student
 
 ### 9. 什么是MyBatis的接口绑定？有哪些实现方式？
 
-接口绑定，就是在 MyBatis 中任意定义接口，然后把接口里面的方法和SQL语句绑定，我们直接调用接口方法就可以，这样比起原来了SqlSession提供的方法我们可以有更加灵活的选择和设置。
+接口绑定，就是在 MyBatis 中任意定义接口，然后把接口里面的方法和SQL语句绑定，我们直接调用接口方法就可以，这样比起原来的SqlSession提供的方法我们可以有更加灵活的选择和设置。
 
 接口绑定有两种实现方式：
 
