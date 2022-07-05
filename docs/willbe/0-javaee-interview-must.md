@@ -35,11 +35,6 @@ JavaEE
 @[toc]
 
 
-https://blog.csdn.net/qq_35995691/article/details/120446084
-
-https://www.cnblogs.com/liufei2/p/14660474.html
-
-https://www.runoob.com/servlet/servlet-life-cycle.html
 
 # JavaEE
 
@@ -157,14 +152,117 @@ servlet的生命周期就是从servlet出现到消亡(销毁)的全过程。主�
 
 ### 5. Session和Cookie的区别和联系；说明在自己项目中如何使用？
 
+Session 和 Cookie 都是会话(Seesion)跟踪技术。Cookie 通过在客户端记录信息确定用户身份，Session 通过在服务器端记录信息确定用户身份。但是 Session 的实现依赖于 **Cookie，sessionId**(session的唯一标识需要存放在客户端).
+
+1. cookie数据存放在客户的浏览器上，session数据放在服务器上。
+
+2. cookie不是很安全，别人可以分析存放在本地的cookie并进行cookie欺骗，考虑到安全应当使用session。
+
+3. session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能，考虑到减轻服务器性能方面，应当使用cookie。
+
+4. 单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。
+
+5. 可以考虑将登录信息等重要信息存放为session，其他信息如果需要保留，可以放在cookie中。
+
+6. 在程序开发过程中，我们可以在客户端每次与服务器交互时检查SessionID（Session中属性值，非HttpServlet环境开发中也可以用其它的Key值代替），用于会话管理。
+
+- 将登陆信息等重要信息存放为SESSION
+
+- 其他信息如果需要保留，可以放在COOKIE中，比如购物车
+  
+  购物车最好使用cookie，但是cookie是可以在客户端禁用的，这时候我们要使用cookie+数据库的方式实现，当从cookie中不能取出数据时，就从数据库获取。
 
 
 
+### 6. 转发和重定向的联系和区别？
 
+- **转发**：服务器端的跳转，路径不会发生改变（针对的是servlet），是服务器内部的处理，一次请求，请求对象不会变
 
+- **重定向**：客户端的跳转，路径会发生改变，将要请求的路径和302重定向的状态码发给客户端浏览器，客户端浏览器将再次向服务器发出请求，不是同个请求，两次请求。
 
+### 7. 拦截器和过滤器的区别
 
+Spring 的拦截器与 Servlet 的 Filter 有相似之处，比如二者都是AOP编程思想的体现，都能实现权限检查、日志记录等。不同的是:
 
+1. 使用范围不同: Filter 是 Servlet 规范规定的，只能用于Web程序中。而拦截器既可以用于Web程序，也可以用于 Application、Swing程序中。
+
+2. 规范不同: Filter 是在 Servlet 规范中定义的，是 Servlet 容器支持的。而拦截器是在 Spring 容器内的，是 Spring 框架支持的。
+
+3. 使用的资源不同:同其他的代码块一样，拦截器也是一个 Spring 的组件，归 Spring 管理，配置在 Spring 文件中，因此能使用 Spring 里的任何资源、对象，例如 Service 对象、数据源、事务管理等，通过 IoC 注入到拦截器即可;而Filter则不能。
+
+4. 深度不同: Filter 在只在 Servlet 前后起作用。而拦截器能够深入到方法前后、异常抛出前后等，因此拦截器的使用具有更大的弹性。所以在 Spring 构架的程序中，要优先使用拦截器。
+
+一张经典的图
+
+![过滤器&拦截器](https://img-blog.csdnimg.cn/20190114155348669.png)
+
+### 8. 三次握手和四次挥手
+
+> 这里是字面描述
+
+**三次握手:**
+
+1. 客户端向服务器发出连接请求等待服务器确认
+
+2. 服务器向客户端返回一个响应告诉客户端收到了请求
+
+3. 客户端向服务器再次发出确认信息,此时连接建立
+
+**四次挥手:**
+
+1. 客户端向服务器发出取消连接请求
+
+2. 服务器向客户端返回一个响应,表示收到客户端取消请求
+
+3. 服务器向客户端发出确认取消信息(向客户端表明可以取消连接了)
+
+4. 客户端再次发送确认消息,此时连接取消
+
+### 9. TCP和UDP的区别
+
+1. TCP ：面向连接，UDP ：面向无连接
+
+2. TCP ：传输效率低，UDP ：传输效率高(有大小限制，一次限定在64kb之内)
+
+3. TCP：可靠，UDP ：不可靠
+
+### 10. 如何解决跨域问题？
+
+跨域指的是浏览器不能执行其它网站的脚本，它是由浏览器的**同源策略**造成的，是浏览器对 JavaScript 施加的安全限制。
+    
+所谓同源指的是：**协议、域名、端口号**都相同，只要有一个不相同，那么都是非同源。
+    
+**解决方案：**
+
+1. 使用 ajax 的 jsonp。（这一点有些人是不知道的）
+
+2. nginx 转发：利用 nginx 反向代理，将请求分发到部署相应项目的 tomcat 服务器，当然也不存在跨域问题。
+
+3. 使用 CORS：写一个配置类实现 WebMvcConfigurer 接口或者配置 FilterRegistrationBean。
+
+`CORS（Cross-Origin Resource Sharing）是一个W3C标准，全称“跨域资源共享”`
+
+### 11. 什么是 CSRF 攻击？如何防御CSRF 攻击
+
+CSRF（Cross-site request forgery） 跨站请求伪造。CSRF 攻击是在受害者毫不知情的情况下，以受害者名义伪造请求发送给受攻击站点，从而在受害者并未授权的情况下执行受害者权限下的各种操作。
+
+CSRF 攻击专门针对状态改变请求，而不是数据窃取，因为攻击者无法查看对伪造请求的响应。
+    
+目前防御 CSRF 攻击主要有三种策略：
+
+1. 验证 HTTP Referer 字段
+
+2. 在请求地址中添加 token 并验证
+
+3. 在 HTTP 头中自定义属性并验证
+
+### 12. HTTP1.0和HTTP1.1和HTTP2.0的区别
+
+1. **HTTP1.0** ：无状态，无连接。
+
+2. **HTTP1.1** ：长连接，请求管道化，增加缓存处理，增加 Host 字段，支持断点传输。
+
+3. **HTTP2.0** ：二进制分帧，多路复用(连接共享)，头部压缩，服务器推送。
 
 
 
@@ -199,8 +297,11 @@ servlet的生命周期就是从servlet出现到消亡(销毁)的全过程。主�
 
 [10道不得不会的Kafka面试题](https://javapub.blog.csdn.net/category_11740063.html)
 
-
 [10道不得不会的Zookeeper面试题](https://javapub.blog.csdn.net/category_11740063.html)
 
 [10道不得不会的Docker面试题](https://javapub.blog.csdn.net/category_11740063.html)
+
+[10道不得不会的JavaEE面试题](https://javapub.blog.csdn.net/category_11740063.html)
+
+
 
