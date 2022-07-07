@@ -55,6 +55,15 @@ export default defineHopeConfig({
       })();
       `
    ],
+   [
+     "script",
+     {
+        "data-ad-client": "ca-pub-2817465101828721",
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        crossorigin: "anonymous"
+     }
+   ]
   ],
   // <meta name="360-site-verification" content="63b223c45248d2ea87cb9b1042148dda" />
 
