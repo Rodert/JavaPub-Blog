@@ -107,7 +107,7 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 - [SpringBoot 中的线程池，你真的会用么](https://mp.weixin.qq.com/s/kqFEKJ_PrlhqnrkCYBomYQ)
 - [docker 打包 springboot 项目快速入门](https://mp.weixin.qq.com/s/kCdqHqPqiqXYGvsD267Adw)
 - [自定义注解+AOP切面日志+源码](https://mp.weixin.qq.com/s/onYeB2EMRIsZS1j86X0ijA)
-
+- [SpringBoot2.x整合Prometheus+Grafana【附源码+视频】](https://mp.weixin.qq.com/s/P-sKokWMf1kKIKK2mAdSZw)
 
 
 ###  💞中间件  ###
@@ -117,8 +117,14 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 ####  RocketMQ  ####
 - [RocketMq 快速入门教程](https://mp.weixin.qq.com/s/kmUlX-5CtWVn0Qli1iyWng)
 
+#### Prometheus ####
+
+- [SpringBoot2.x整合Prometheus+Grafana【附源码+视频】](https://mp.weixin.qq.com/s/P-sKokWMf1kKIKK2mAdSZw)
 
 
+#### flowable ####
+
+- [手把手实现springboot整合flowable、附源码-视频教程](https://mp.weixin.qq.com/s/hWwzSu-SlyTzzzHUrA7OXQ)
 
 ###  💍Redis  ###
 
@@ -131,7 +137,10 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 - [记一次redis线上问题](https://mp.weixin.qq.com/s/blf1a6cP-oJQ9FmnpU_ocw)
 - [了解Redis过期策略及实现原理](https://mp.weixin.qq.com/s/GFtaDZb68XcoVQn6F2U_0Q)
 
+###  📚Docker  ###
 
+- [docker 打包 springboot 项目快速入门](https://mp.weixin.qq.com/s/kCdqHqPqiqXYGvsD267Adw)
+- 
 
 ###  📚sql  ###
 
@@ -145,6 +154,12 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 - [优雅的替换if-else语句](https://mp.weixin.qq.com/s/nVl2wb1Pr2tChy6kYw51MQ)
 - [单例模式 --- 生产环境怎么用](https://mp.weixin.qq.com/s/s1cwut9WvUSrMYw_6UK3sg)
+
+
+
+
+
+
 
 ###  🔒分布式  ###
 
@@ -162,6 +177,9 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 - [Git【入门】这一篇就够了](https://mp.weixin.qq.com/s/keQpwkwXbiUxsjQNxse2mw)
 - [国内加速访问Github的办法，超级简单](https://mp.weixin.qq.com/s/Wx1Q-pFUi5SWHoGKAFd3pg)
+- [企业级git组合命令](https://mp.weixin.qq.com/s/ouYfFWEP3ORsN6wZhYf0Xw)
+- [基于 Gitee 搭建个人网站-入门教程](https://mp.weixin.qq.com/s/zr-aDM3SwUi72aUj5X1htw)
+
 
 #### shell ####
 
@@ -170,6 +188,19 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 #### linux  ####
 
 - [史上最全win10下Linux子系统的安装及优化方案](https://mp.weixin.qq.com/s/jq6oz7L07WZqLS8WPwzGyA)
+
+#### ffmpeg  ####
+
+- [rodert教你学FFmpeg实战这一篇就够了](https://mp.weixin.qq.com/s/x5TRlRtzayWZLbRqe-eEpA)
+
+#### 实用工具  ####
+
+- [压箱底的10款在线工具平台](https://mp.weixin.qq.com/s/PxvcpSWDoOOkgRTYCYVciw)
+
+
+###  🌋加密  ###
+
+- [FPE格式保留加密](https://mp.weixin.qq.com/s/i0NGn_B2fFVS86jlf4qGJw)
 
 ###  🤖web实战  ###
 
@@ -182,8 +213,6 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 - [Spring Boot + Security + MyBatis + Thymeleaf + Activiti 快速开发平台项目](https://mp.weixin.qq.com/s/2ER31ZqgakXM6HjHI7-ckg)
 - [一款基于 Spring Boot 的现代化社区（论坛/问答/社交网络/博客）](https://mp.weixin.qq.com/s/iyaD_KL-QCmhkhdNgPcQlg)
 - [决定做一个开源项目](https://mp.weixin.qq.com/s/EcstWlAPtGbE9enfUGrqpA)
-
-
 
 
 
@@ -217,6 +246,11 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 - [国企程序员是一种怎样的体验](https://mp.weixin.qq.com/s/XJ4r-Xhkyu6fpoPbq2PW6g)
 - [越努力，](https://mp.weixin.qq.com/s/YdeXrlSNSgqcALL-ZURYmg)
 - [一个员工的离职成本到底有多高？](https://mp.weixin.qq.com/s/TCUP-LSzM3EEBdOTb9FaNA)
+- [原来我是个厨子](https://mp.weixin.qq.com/s/taZOW8US6W6vfUh8C7wdoQ)
+- [周末](https://mp.weixin.qq.com/s/r_dqtPDmWgbfLInbHoNJKg)
+- [闲扯](https://mp.weixin.qq.com/s/iiFwx01ngNylCfD6h77OTw)
+- [我出来了](https://mp.weixin.qq.com/s/06Lm-K7r98b4bL-O3xtnRA)
+- [我的网站正式上线了](https://mp.weixin.qq.com/s/FPXO8KPO0qzT7_SuODXeOQ)
 
 ####  福利  ####
 
@@ -278,7 +312,6 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 
 汇总地址：[下载地址1](https://blog.csdn.net/qq_40374604/category_11788364.html) | [下载地址2](http://javapub.net.cn/category/%E5%B0%8F%E6%B8%B8%E6%88%8F/)
-
 
 ---
 
