@@ -203,6 +203,12 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 - [FPE格式保留加密](https://mp.weixin.qq.com/s/i0NGn_B2fFVS86jlf4qGJw)
 
+
+###  🔒GoLang  ###
+
+- [Java急速转职GoLang工程师资料-入门篇](https://mp.weixin.qq.com/s/B0F4JpmLfrSjIlGiFsjUhA)
+
+
 ###  🤖web实战  ###
 
 **下载地址：** [github](https://github.com/Rodert/JavaPub-Web)  | [gitee](https://gitee.com/rodert/JavaPub-Web)
