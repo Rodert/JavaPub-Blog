@@ -31,7 +31,6 @@ https://www.zhihu.com/question/57324641/answer/2262079479
 
 https://blog.csdn.net/xingchensuiyue/article/details/108716466
 
-
 [Java常见的18把锁【JavaPub手绘】](xmind图.jpg)
 
 
@@ -91,11 +90,17 @@ CAS 是一种乐观锁实现机制（比较并替换），主要是三部分：�
 
 常见代表：`synchronized、new ReentrantLock(false)、new ReentrantReadWriteLock(false)`
 
-非公平锁非公平锁 是多个线程加锁时直接尝试获取锁，获取不到才会到等待队列的队尾等待。但如果此时锁刚好可用，那么这个线程可以无需阻塞直接获取到锁，所以非公平锁有可能出现后申请锁的线程先获取锁的场景。
+非公平锁 是多个线程加锁时直接尝试获取锁，获取不到才会到等待队列的队尾等待。但如果此时锁刚好可用，那么这个线程可以无需阻塞直接获取到锁，所以非公平锁有可能出现后申请锁的线程先获取锁的场景。
 
 非公平锁的优点是可以减少唤起线程的开销，整体的吞吐效率高，因为线程有几率不阻塞直接获得锁，CPU 不必唤醒所有线程。缺点是处于等待队列中的线程可能会饿死，或者等很久才会获得锁。
 
+
+
 **synchronized 和 lock 对比更有助于理解公平锁和非公平锁。**
 
+- synchronized 自动释放锁，lock 手动释放（容易死锁) lock.unlock()；synchronized 阻塞后，其他线程一直等待，lock有超时时间。
+- lock 等待锁过程中可以用 interrupt 来中断等待，而 synchronized 只能等待锁的释放，不能响应中断。
+- synchronized 使用 Object 对象本身的 wait 、 notify、notifyAll 调度机制，而 Lock 可以使用 Condition 进行线程之间的调度。
 
+## 分段锁
 
