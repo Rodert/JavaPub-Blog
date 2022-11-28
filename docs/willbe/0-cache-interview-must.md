@@ -36,7 +36,6 @@ star: true
 
 怎么保证缓存和数据库数据的一致性？
 
-
 掌握缓存击穿
 掌握缓存雪崩
 掌握缓存穿透
@@ -79,16 +78,151 @@ https://www.jianshu.com/p/ea467a2bd662
 
 ### 请说说有哪些缓存算法？是否能手写一下 LRU 代码的实现？
 
+缓存算法，比较常见的是三种：
+
+- LRU（least recently used ，最近最少使用)
+- LFU（Least Frequently used ，最不经常使用)
+- FIFO（first in first out ，先进先出)
+
+这里我们可以借助 LinkedHashMap 实现
+
+```java
+public class LRULinkedMap<K,V> {
+
+
+    /**
+     * 最大缓存大小
+     */
+    private int cacheSize;
+
+    private LinkedHashMap<K,V> cacheMap ;
+
+
+    public LRULinkedMap(int cacheSize) {
+        this.cacheSize = cacheSize;
+
+        cacheMap = new LinkedHashMap(16,0.75F,true){
+            @Override
+            protected boolean removeEldestEntry(Map.Entry eldest) {
+                if (cacheSize + 1 == cacheMap.size()){
+                    return true ;
+                }else {
+                    return false ;
+                }
+            }
+        };
+    }
+
+    public void put(K key,V value){
+        cacheMap.put(key,value) ;
+    }
+
+    public V get(K key){
+        return cacheMap.get(key) ;
+    }
+
+
+    public Collection<Map.Entry<K, V>> getAll() {
+        return new ArrayList<Map.Entry<K, V>>(cacheMap.entrySet());
+    }
+}
+```
+
+使用案例：
+
+```java
+    @Test
+    public void put() throws Exception {
+        LRULinkedMap<String,Integer> map = new LRULinkedMap(3) ;
+        map.put("1",1);
+        map.put("2",2);
+        map.put("3",3);
+
+        for (Map.Entry<String, Integer> e : map.getAll()){
+            System.out.print(e.getKey() + " : " + e.getValue() + "\t");
+        }
+
+        System.out.println("");
+        map.put("4",4);
+        for (Map.Entry<String, Integer> e : map.getAll()){
+            System.out.print(e.getKey() + " : " + e.getValue() + "\t");
+        }
+    }
+    
+//输出
+1 : 1	2 : 2	3 : 3	
+2 : 2	3 : 3	4 : 4	 
+```
+
+
+### 常见的常见的缓存工具和框架有哪些？
+
+在 Java 后端开发中，常见的缓存工具和框架列举如下：
+
+- 本地缓存：Guava LocalCache、Ehcache、Caffeine 。
+
+	Ehcache 的功能更加丰富，Caffeine 的性能要比 Guava LocalCache 好。
+
+- 分布式缓存：Redis、Memcached、Tair 。
+
+	Redis 最为主流和常用。
 
 
 
-### 
+
+### 用了缓存之后，有哪些常见问题？
+
+常见的问题，可列举如下：
+
+**写入问题**
+
+- 缓存何时写入？并且写时如何避免并发重复写入？
+- 缓存如何失效？
+- 缓存和 DB 的一致性如何保证？
 
 
-### 
+**经典三连问**
+
+- 如何避免缓存穿透的问题？
+- 如何避免缓存击穿的问题？
+- 如果避免缓存雪崩的问题？
 
 
-### 
+### 如何处理缓存穿透的问题
+
+缓存穿透，是指查询一个一定不存在的数据，由于缓存是不命中时被动写，并且处于容错考虑，如果从 DB 查不到数据则不写入缓存，这将导致这个不存在的数据每次请求都要到 DB 去查询，失去了缓存的意义。
+
+在流量大时，可能 DB 就挂掉了，要是有人利用不存在的 key 频繁攻击我们的应用，这就是漏洞。如下图：
+
+
+![缓存穿透](https://tvax1.sinaimg.cn/large/007F3CC8ly1h8l7ej8yllj30gf0bs3z1.jpg)
+
+
+**如何解决**
+
+有两种方案可以解决：
+
+1. 方案一，缓存空对象。
+当从 DB 查询数据为空，我们仍然将这个空结果进行缓存，具体的值需要使用特殊的标识，能和真正缓存的数据区分开。另外，需要设置较短的过期时间，一般建议不要超过 5 分钟。
+
+2. 方案二，BloomFilter 布隆过滤器。
+在缓存服务的基础上，构建 BloomFilter 数据结构，在 BloomFilter 中存储对应的 KEY 是否存在，如果存在，说明该 KEY 对应的值不为空。
+
+**如何选择**
+
+这两个方案，各有其优缺点。
+
+
+
+|  |  缓存空对象 |	BloomFilter 布隆过滤器 |
+|--|--|--|
+| 适用场景 |	1、数据命中不高 2、保证一致性 | 1、数据命中不高, 2、数据相对固定、实时性低 |
+| 维护成本 | 1、代码维护简单 2、需要过多的缓存空间 3、数据不一致 | 1、代码维护复杂，2、缓存空间占用小 |
+
+
+实际情况下，使用方案二比较多。因为，相比方案一来说，更加节省内容，对缓存的负荷更小。
+
+
 
 
 ### 
