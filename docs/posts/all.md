@@ -376,6 +376,6 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 看到这里了，点个关注呗！双击即可点赞！关注 @JavaPub
 
-我是pub，夜跑10公里的markdown程序员。
+我是 JavaPub，夜跑5公里的 markdown 程序员。
 
 
