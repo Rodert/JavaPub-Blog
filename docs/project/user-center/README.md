@@ -17,6 +17,8 @@
 
 ## 技术栈：
 
+使用当下最热门的
+
 前端： vue、html、css、js
 
 后端： java、springboot、mybatisplus
