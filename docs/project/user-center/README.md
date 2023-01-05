@@ -29,3 +29,9 @@
 ## 收获
 
 通过 用户中心 项目的学习，
+
+
+参考：
+
+1. https://github.com/quantum-coding/Front-end-StudyNav
+2. https://github.com/EggYolkPie/vue-cli-default
