@@ -1,3 +1,5 @@
+JavaPub面试宝典【第22版】
+
 直接上干货，几百篇原创笔记都在这。
 
 ## 文章列表
@@ -6,17 +8,19 @@
 
 - [Java基础](https://mp.weixin.qq.com/s/3Nviyml0cvnX_HHkZ5DjWg)
 - [Java并发入门](https://mp.weixin.qq.com/s/h2tTwDVqL15rCI6rftgn9A)
+- [Java容器](https://mp.weixin.qq.com/s/ug3LBR4MfM1C5uVFJaPWLQ)
 - [JavaWeb](https://mp.weixin.qq.com/s/59Tif95LGi8BTJXu47zi6g)
 - [JVM](https://mp.weixin.qq.com/s/hvsaD1NlzpR0LpP-GmbU_A)
 - [MySQL](https://mp.weixin.qq.com/s/yVPwCoSQ-8OYvhw8bH0PtA)
 - [MyBatis](https://mp.weixin.qq.com/s/lVFwy765hQ2FvIYBHyw0yA)
 - [Spring](https://mp.weixin.qq.com/s/lrHsLZANxHxd_FWTCdMNJw)
+- [SpringBoot](https://mp.weixin.qq.com/s/-oYKVXBaQwzyzp7ffqH7gw)
 - [Redis](https://mp.weixin.qq.com/s/_Pq2VgxRA4yw1j_eCfEiLg)
 - [ElasticSearch](https://mp.weixin.qq.com/s/z3D37HqeTUmwrdheUL_Efw)
 - [Kafka](https://javapub.blog.csdn.net/category_11740063.html)
 - [Zookeeper](https://mp.weixin.qq.com/s/ym0-x6okFi0CgF8RcxeLFA)
 - [Docker](https://mp.weixin.qq.com/s/DTC3gZNHm3Rlf_GK7twlkQ)
-
+- [缓存](https://mp.weixin.qq.com/s/EnCBbpRuXj_E8kfsaJMeqg)
 
 ###  📖知识点总结  ###
 
@@ -197,11 +201,26 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 #### 实用工具  ####
 
 - [压箱底的10款在线工具平台](https://mp.weixin.qq.com/s/PxvcpSWDoOOkgRTYCYVciw)
+- [离线IP地址定位库](https://mp.weixin.qq.com/s/j3a9JW8lzhh6ZVhBARgecw)
 
 
 ###  🌋加密  ###
 
 - [FPE格式保留加密](https://mp.weixin.qq.com/s/i0NGn_B2fFVS86jlf4qGJw)
+
+
+###  🔒GoLang  ###
+
+- [Java急速转职GoLang工程师资料-入门篇](https://mp.weixin.qq.com/s/B0F4JpmLfrSjIlGiFsjUhA)
+
+### 📚前端  ###
+
+- [网站都变灰色了，1分钟教你实现](https://mp.weixin.qq.com/s/zERj4VUoiagMhvCZaa8v7g)
+- 
+
+###  💞区块链  ###
+
+- [这破玩意就是区块链？](https://mp.weixin.qq.com/s/AZYDePT-dZuPp-0gGlCHzA)
 
 ###  🤖web实战  ###
 
@@ -252,6 +271,8 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 - [闲扯](https://mp.weixin.qq.com/s/iiFwx01ngNylCfD6h77OTw)
 - [我出来了](https://mp.weixin.qq.com/s/06Lm-K7r98b4bL-O3xtnRA)
 - [我的网站正式上线了](https://mp.weixin.qq.com/s/FPXO8KPO0qzT7_SuODXeOQ)
+- [近况](https://mp.weixin.qq.com/s/ufPAfaBmf1aYppIIRoGh1g)
+- 
 
 ####  福利  ####
 
@@ -349,12 +370,12 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 **我的原创电子书**
 
-![image](https://tva3.sinaimg.cn/large/007F3CC8ly1h45q1dybzqj30na07zjsi.jpg)
+![image](https://upload-images.jianshu.io/upload_images/15828361-33451952716f5add.jpg)
 
 链接：https://pan.baidu.com/s/11kIaq5V6A_pFX3yVoTUvzA 提取码：java
 
 看到这里了，点个关注呗！双击即可点赞！关注 @JavaPub
 
-我是pub，夜跑10公里的markdown程序员。
+我是 JavaPub，夜跑5公里的 markdown 程序员。
 
 
