@@ -1,6 +1,6 @@
 # claude堪比chatgpt4-续集1
 
-标题：一分钟上手神器Claude!
+标题： 一分钟上手神器Claude !
 
 一分钟学会在手机上使用AI对话神器。
 
