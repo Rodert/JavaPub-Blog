@@ -6,18 +6,18 @@
 
 **<font color=blue>面试官</font>：接下来，聊聊Java的注解,它们到底有什么用?**
 
-**<font color=red>候选人：</font>**注解的用处主要三个:
+**<font color=red>候选人：</font>** 注解的用处主要三个:
 第一个,编译期使用。比如@Override确保你正确重写了方法,@Deprecated表示这个方法以后可能会删掉。
 第二个,运行期使用。很多框架通过反射来读注解,根据注解改变程序的行为。像Spring的@Autowired就是运行期读取的。
 第三个, build tool用。很多构建工具会在构建代码时扫描和读取注解,根据注解做相应的操作。JUnit的@Test就是告诉测试运行器哪些是测试方法。
 
 **<font color=blue>面试官</font>：注解和注释有什么区别吧?**
 
-**<font color=red>候选人：</font>**注释是写给人看的,注解是写给机器看的。注释不会对程序产生任何影响,注解会影响程序的编译、运行。注释是// 或者/* */,注解是@打头的。
+**<font color=red>候选人：</font>** 注释是写给人看的,注解是写给机器看的。注释不会对程序产生任何影响,注解会影响程序的编译、运行。注释是// 或者/* */,注解是@打头的。
 
 **<font color=blue>面试官</font>：举个自定义注解的例子?**
 
-**<font color=red>候选人：</font>**这里有个自定义注解的示例:
+**<font color=red>候选人：</font>** 这里有个自定义注解的示例:
 
 ```java
 //自定义注解
@@ -43,7 +43,7 @@ String name = anno.name(); // name = "World"
 
 **<font color=blue>面试官</font>：说说Spring中常见的注解?**
 
-**<font color=red>候选人：</font>**Spring中超级常用的注解有:
+**<font color=red>候选人：</font>** Spring中超级常用的注解有:
 @Component:把类标记为Spring的组件,用于组件扫描。
 @Autowired:自动装配成员变量、构造方法和方法参数。
 @Service:标记业务层组件。@Controller:标记控制层组件。 
@@ -56,7 +56,7 @@ String name = anno.name(); // name = "World"
 
 **<font color=blue>面试官</font>：SpringBoot中常见的注解也说一下?**
 
-**<font color=red>候选人：</font>**SpringBoot中常用的注解有:
+**<font color=red>候选人：</font>** SpringBoot中常用的注解有:
 @SpringBootApplication:标记这个类是SpringBoot的主配置类。
 @Configuration:标记这个类是配置类。
 @EnableAutoConfiguration:开启SpringBoot的自动配置。
@@ -69,7 +69,7 @@ String name = anno.name(); // name = "World"
 
 **<font color=blue>面试官</font>：最后,AOP中的注解呢?**
 
-**<font color=red>候选人：</font>**AOP中最重要的注解有: 
+**<font color=red>候选人：</font>** AOP中最重要的注解有: 
 @Aspect:标记一个切面。 
 @Pointcut:定义一个切点,可以是一个规则表达式,和@Before等注解搭配使用。
 @Before:前置通知,在目标方法调用前执行。
@@ -83,11 +83,11 @@ String name = anno.name(); // name = "World"
 
 **<font color=blue>面试官</font>：自定义注解需要什么?**
 
-**<font color=red>候选人：</font>**自定义注解需要两个注解:@Target定义可以用于什么地方(方法、类等),@Retention定义注解的生命周期(编译期、运行期、源码)。然后使用@interface自定义注解,可以添加属性,默认值等。
+**<font color=red>候选人：</font>** 自定义注解需要两个注解:@Target定义可以用于什么地方(方法、类等),@Retention定义注解的生命周期(编译期、运行期、源码)。然后使用@interface自定义注解,可以添加属性,默认值等。
 
 **<font color=blue>面试官</font>：注解的生命周期有几种?**
 
-**<font color=red>候选人：</font>**注解生命周期有3种:
+**<font color=red>候选人：</font>** 注解生命周期有3种:
 源码阶段:@Retention(RetentionPolicy.SOURCE),编译后失效。
 编译阶段:@Retention(RetentionPolicy.CLASS),编译后存在于字节码文件中,运行时无法获得。
 运行阶段:@Retention(RetentionPolicy.RUNTIME),编译后存在于字节码文件中,运行时可以通过反射获取。
@@ -95,7 +95,7 @@ String name = anno.name(); // name = "World"
 
 **<font color=blue>面试官</font>：Enum中的注解呢?**
 
-**<font color=red>候选人：</font>**@Retention(RetentionPolicy.SOURCE)只存在于源码,编译后失效。
+**<font color=red>候选人：</font>** @Retention(RetentionPolicy.SOURCE)只存在于源码,编译后失效。
 @Retention(RetentionPolicy.RUNTIME)会保留至运行时,可以通过反射读取。所以Enum中的注解一般使用RUNTIME。
 枚举例子:
 
@@ -115,7 +115,7 @@ public enum ColorType {
 
 **<font color=blue>面试官</font>：注解在哪些地方可以使用?**
 
-**<font color=red>候选人：</font>**注解可以放在:
+**<font color=red>候选人：</font>** 注解可以放在:
 类、接口、枚举上
 字段、方法上
 方法的参数上
@@ -134,7 +134,7 @@ ElementType.PACKAGE:包
 
 **<font color=blue>面试官</font>：运行时注解的使用场景?**
 
-**<font color=red>候选人：</font>**运行时注解主要有两大使用场景:
+**<font color=red>候选人：</font>** 运行时注解主要有两大使用场景:
 1. 框架使用:很多框架使用运行时注解读取注解信息,调用相应的处理逻辑。如Spring使用@Autowired、@PostConstruct等实现依赖注入和初始化方法调用。
 2. 自定义注解:我们可以自定义运行时注解,在程序运行时通过反射读取注解,执行相应逻辑。比如:
 
@@ -163,7 +163,7 @@ MyAnnotation anno = m.getAnnotation(MyAnnotation.class);
 
 **<font color=blue>面试官</font>：最后一个问题,注解有哪些限制?**
 
-**<font color=red>候选人：</font>**注解有以下几个限制:
+**<font color=red>候选人：</font>** 注解有以下几个限制:
 1. 注解不能继承其他注解或接口。
 2. 注解只有成员变量,没有方法。
 3. 注解中的成员变量只能是基本类型、String、Enum、Annotation等,不能是对象。
