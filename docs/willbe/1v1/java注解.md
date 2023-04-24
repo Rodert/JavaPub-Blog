@@ -4,7 +4,7 @@
 
 
 
-**<font color=blue>面试官</font>：接下来，聊聊Java的注解,它们到底有什么用?**
+**<font color=blue>面试官</font>： 接下来，聊聊Java的注解,它们到底有什么用?**
 
 **<font color=red>候选人：</font>** 注解的用处主要三个:
 第一个,编译期使用。比如@Override确保你正确重写了方法,@Deprecated表示这个方法以后可能会删掉。
