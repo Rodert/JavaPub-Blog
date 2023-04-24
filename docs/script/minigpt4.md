@@ -1,4 +1,4 @@
-炸裂，AI可以根据图片做网站了！评论区领最新AI资料#chatgpt #openai #midjourney #人工智能
+炸裂，AI可以根据图片做网站了！评论区领最新AI资料 #chatgpt #openai #midjourney #人工智能
 
 
 各位科技真的大爆炸了，GPT4 的识图功能一直不开放，现在被一个叫做 miniGPT4 的网站做出来了。并且完全开源，地址我放在视频后面。
