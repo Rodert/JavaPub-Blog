@@ -38,7 +38,7 @@ https://www.nowcoder.com/discuss/post/353154807454179328
 
 [javaNIO](https://mp.weixin.qq.com/s/MzgMLpEfcnj7GY4HAchvkQ)
 
-[]()
+[synchronized](https://mp.weixin.qq.com/s/8MSLTO_w2obOLgCgwp8XNA)
 
 []()
 
