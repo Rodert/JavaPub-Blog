@@ -315,11 +315,22 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 [【面试1v1】synchronized](https://mp.weixin.qq.com/s/8MSLTO_w2obOLgCgwp8XNA)
 
+[【面试1v1】volatile](https://mp.weixin.qq.com/s/0FBa1_BamrsvzvRNNeC_dQ)
+
+[【面试1v1】线程池](https://mp.weixin.qq.com/s/DEfxLzR0t8wCWI1eUFEsww)
+
+[【面试1v1】ThreadLocal](https://mp.weixin.qq.com/template/article/1684030474/index.html)
+
+[【面试1v1】JVM内存模型](https://mp.weixin.qq.com/s/Tw97nlAr13PqGFxijIHO0A)
+
+[【面试1v1】CountDownLatch-CyclicBarrier](https://mp.weixin.qq.com/s/e9-X5RtU3XJd7XB6sdmzyQ)
+
+
 
 
 
 原创电子书
-链接：https://pan.baidu.com/s/1BUjGUevP00GqRw2b0HgBBA?pwd=6e67 
+链接：<https://pan.baidu.com/s/1BUjGUevP00GqRw2b0HgBBA?pwd=6e67> 
 提取码：6e67 
 
 
