@@ -41,7 +41,7 @@ https://www.nowcoder.com/discuss/post/353154807454179328
 - [SpringBoot](https://mp.weixin.qq.com/s/-oYKVXBaQwzyzp7ffqH7gw)
 - [Redis](https://mp.weixin.qq.com/s/_Pq2VgxRA4yw1j_eCfEiLg)
 - [ElasticSearch](https://mp.weixin.qq.com/s/z3D37HqeTUmwrdheUL_Efw)
-- [Kafka](https://javapub.blog.csdn.net/category_11740063.html)
+- [Kafka]
 - [Zookeeper](https://mp.weixin.qq.com/s/ym0-x6okFi0CgF8RcxeLFA)
 - [Docker](https://mp.weixin.qq.com/s/DTC3gZNHm3Rlf_GK7twlkQ)
 - [缓存](https://mp.weixin.qq.com/s/EnCBbpRuXj_E8kfsaJMeqg)
@@ -239,7 +239,7 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 ###  🤖web实战  ###
 
-**下载地址：** [github](https://github.com/Rodert/JavaPub-Web)  | [gitee](https://gitee.com/rodert/JavaPub-Web)
+**下载地址：** github:https://github.com/Rodert/JavaPub-Web  | gitee:https://gitee.com/rodert/JavaPub-Web
 
 - [SSM项目合集（公众号领取）]()
 - [基于SSM图书馆管理系统](https://mp.weixin.qq.com/s/rydMsMCGZG5F-F-LpXS_0A)
@@ -325,12 +325,18 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 [【面试1v1】CountDownLatch-CyclicBarrier](https://mp.weixin.qq.com/s/e9-X5RtU3XJd7XB6sdmzyQ)
 
+[【面试1v1】JVM类加载过程](https://mp.weixin.qq.com/s/65ljCN7gbhqlUxMJulujnQ)
+
+[【面试1v1】垃圾回收机制](https://mp.weixin.qq.com/s/w19835ISIB_46Bnt6MzUDA)
+
+
+
 
 
 
 
 原创电子书
-链接：<https://pan.baidu.com/s/1BUjGUevP00GqRw2b0HgBBA?pwd=6e67> 
+链接：https://pan.baidu.com/s/1BUjGUevP00GqRw2b0HgBBA?pwd=6e67
 提取码：6e67 
 
 
