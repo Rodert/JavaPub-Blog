@@ -274,29 +274,40 @@ CSRF 攻击专门针对状态改变请求，而不是数据窃取，因为攻击
 **《最少必要面试题》**
 
 
-[10道不得不会的Java基础面试题](https://javapub.blog.csdn.net/article/details/122011870)
 
-[10道不得不会的Java并发基础面试题](https://javapub.blog.csdn.net/article/details/122159231)
+[10道不得不会的Java基础面试题](https://mp.weixin.qq.com/s/3Nviyml0cvnX_HHkZ5DjWg)
 
-[10道不得不会的JVM面试题](https://javapub.blog.csdn.net/article/details/124008535)
+[10道不得不会的Java容器面试题](https://mp.weixin.qq.com/s/ug3LBR4MfM1C5uVFJaPWLQ)
 
-[10道不得不会的MySQL基础面试题](https://javapub.blog.csdn.net/article/details/122087243)
+[10道不得不会的Java并发基础面试题](https://mp.weixin.qq.com/s/h2tTwDVqL15rCI6rftgn9A)
 
-[10道不得不会的MyBatis面试题](https://javapub.blog.csdn.net/category_11740063.html)
+[10道不得不会的JavaEE面试题](https://mp.weixin.qq.com/s/59Tif95LGi8BTJXu47zi6g)
 
-[10道不得不会的Spring面试题](https://javapub.blog.csdn.net/category_11740063.html)
+[10道不得不会的JVM面试题](https://mp.weixin.qq.com/s/hvsaD1NlzpR0LpP-GmbU_A)
 
-[10道不得不会的ElasticSearch面试题](https://javapub.blog.csdn.net/article/details/123761794)
+[10道不得不会的MySQL基础面试题](https://mp.weixin.qq.com/s/yVPwCoSQ-8OYvhw8bH0PtA)
 
-[10道不得不会的Redis面试题](https://javapub.blog.csdn.net/category_11740063.html)
+[10道不得不会的MyBatis面试题](https://mp.weixin.qq.com/s/lVFwy765hQ2FvIYBHyw0yA)
+
+[10道不得不会的Spring面试题](https://mp.weixin.qq.com/s/lrHsLZANxHxd_FWTCdMNJw)
+
+[10道不得不会的SpringBoot面试题](https://mp.weixin.qq.com/s/-oYKVXBaQwzyzp7ffqH7gw)
+
+[10道不得不会的ElasticSearch面试题](https://mp.weixin.qq.com/s/z3D37HqeTUmwrdheUL_Efw)
+
+[10道不得不会的Redis面试题](https://mp.weixin.qq.com/s/_Pq2VgxRA4yw1j_eCfEiLg)
 
 [10道不得不会的Kafka面试题](https://javapub.blog.csdn.net/category_11740063.html)
 
-[10道不得不会的Zookeeper面试题](https://javapub.blog.csdn.net/category_11740063.html)
+[10道不得不会的Zookeeper面试题](https://mp.weixin.qq.com/s/ym0-x6okFi0CgF8RcxeLFA)
 
-[10道不得不会的Docker面试题](https://javapub.blog.csdn.net/category_11740063.html)
+[10道不得不会的Docker面试题](https://mp.weixin.qq.com/s/DTC3gZNHm3Rlf_GK7twlkQ)
 
-[10道不得不会的JavaEE面试题](https://javapub.blog.csdn.net/category_11740063.html)
+[10道不得不会的缓存面试题]()
 
 
+
+
+
+[GItHub](https://github.com/Rodert)|[GitEE](https://gitee.com/rodert)
 

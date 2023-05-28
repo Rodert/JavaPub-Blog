@@ -165,6 +165,8 @@ HashMap 根据 key 计算数组位置的算法是：用 key 的 hash 值与数�
 
 [10道不得不会的Java基础面试题](https://mp.weixin.qq.com/s/3Nviyml0cvnX_HHkZ5DjWg)
 
+[10道不得不会的Java容器面试题](https://mp.weixin.qq.com/s/ug3LBR4MfM1C5uVFJaPWLQ)
+
 [10道不得不会的Java并发基础面试题](https://mp.weixin.qq.com/s/h2tTwDVqL15rCI6rftgn9A)
 
 [10道不得不会的JavaEE面试题](https://mp.weixin.qq.com/s/59Tif95LGi8BTJXu47zi6g)
@@ -188,3 +190,12 @@ HashMap 根据 key 计算数组位置的算法是：用 key 的 hash 值与数�
 [10道不得不会的Zookeeper面试题](https://mp.weixin.qq.com/s/ym0-x6okFi0CgF8RcxeLFA)
 
 [10道不得不会的Docker面试题](https://mp.weixin.qq.com/s/DTC3gZNHm3Rlf_GK7twlkQ)
+
+[10道不得不会的缓存面试题]()
+
+
+
+
+
+[GItHub](https://github.com/Rodert)|[GitEE](https://gitee.com/rodert)
+
