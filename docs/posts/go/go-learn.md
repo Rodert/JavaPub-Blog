@@ -1,3 +1,11 @@
+<!--
+ * @Author: JavaPub
+ * @Date: 2023-04-01 08:30:10
+ * @LastEditors: your name
+ * @LastEditTime: 2023-09-18 21:20:46
+ * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
+ * @FilePath: \JavaPub-Blog\docs\posts\go\go-learn.md
+-->
 ---
 ## 这是侧边栏索引
 index: 1
@@ -32,4 +40,6 @@ java转职golang学习路线
 5. k8s安装mysql、redis、部署go程序
 
 
+
+[Go语言入门](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247489690&idx=1&sn=38c26022739081ffd610d89d0ee74463&chksm=fa920b9acde5828c69a26f7011f040d82339407ec81adbb37b066a8d822104d1d987d80df2ff&token=386372553&lang=zh_CN#rd)
 
