@@ -3,10 +3,12 @@
  * @Author: JavaPub
  * @Date: 2023-09-25 21:28:07
  * @LastEditors: your name
- * @LastEditTime: 2023-09-25 22:53:06
+ * @LastEditTime: 2023-10-12 22:17:32
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
  * @FilePath: \JavaPub-Blog\docs\posts\git\就是这么简单，github下载加速.md
 -->
+
+github Release 下载加速，绿色合法，遥遥领先
 
 就是这么简单，github Release 下载加速，绿色合法。
 
@@ -14,6 +16,7 @@
 
 你有没有这样一个困惑，当你寻找了很久终于找到一个解决问题的方案，发现这个工具在 GitHub 上，接下来等待我们的就是遥遥无期的龟速下载。
 
+@[toc]
 
 
 遥遥领先
@@ -22,7 +25,7 @@
 
 GitHub 作为程序员的知识宝库，被称为为全球最大的同性交友社区。但它的访问速度让每一个国内用户都备受折磨，而在 GitHub 上下载资源更是让人恼火。
 
-> 这里声明，坚决维护国家安全，爱党爱国。
+> 这里声明，JavaPub 坚决维护国家安全，爱党爱国。
 
 但是很多的开源软件，它的新版本都是通过 GitHub Release 来发布的。有时你在它的官网点击下载以后，实际上是从一个 Github 的地址下载文件。
 
@@ -78,5 +81,8 @@ https://github.com/logseq/logseq/releases/download/0.6.5/Logseq-darwin-x64-0.6.5
 
 这个网站的原理，是使用了 `Cloudflare Workers` 的全球CDN进行加速，完全合理、合法。并且你甚至可以部署到自己服务器上面。这个网站的源代码也已经开源：**GitHub - hunshcn/gh-proxy**
 
+## 视频讲解
+
+<https://www.bilibili.com/video/BV1Qw411C7Ao>
 
 
