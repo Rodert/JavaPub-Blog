@@ -2,13 +2,13 @@
  * @Author: JavaPub
  * @Date: 2023-10-07 19:36:06
  * @LastEditors: your name
- * @LastEditTime: 2023-10-20 08:53:49
+ * @LastEditTime: 2023-10-21 20:04:58
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
- * @FilePath: \JavaPub-Blog\docs\posts\springboot\springboot生成二维码的正确姿势.md
+ * @FilePath: \JavaPub-Blog\docs\posts\springboot\springboot生成二维码的正确姿势-附视频附源码.md
 -->
 
 
-
+@[toc]
 
 
 二维码的原理是什么，如何保证不重复？你有没有想过这样一件事，二维码是实现原理是什么？如何保证各个平台的二维码是唯一的？就算你的程序停止运行，但是你的二维码依然存在。设计上要保证唯一性，比如在物流等环境中扫码编程别人的二维码。
@@ -132,12 +132,14 @@ public class QrCodeController1 {
 
 ### 生成二维码
 
-离线可以扫描二维码
+附带功能化：
+
+- 离线可以扫描二维码
+
+- 二维码可以带logo
 
 
-### 生成带 logo 的二维码
-
-
+### 资源共享
 
 视频：https://www.bilibili.com/video/BV1cw411w7Rk/
 
