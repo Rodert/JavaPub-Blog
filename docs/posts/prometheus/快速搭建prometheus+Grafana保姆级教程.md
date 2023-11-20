@@ -56,3 +56,7 @@ Prometheus 的 URL
 完成后，你就可以在 Grafana 中创建仪表板，并使用 Prometheus 作为数据源来可视化监控数据了。
 
 
+## Prometheus 的四种类型
+
+https://zhuanlan.zhihu.com/p/592560633
+
