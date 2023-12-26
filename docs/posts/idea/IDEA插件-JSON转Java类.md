@@ -2,7 +2,7 @@
  * @Author: JavaPub
  * @Date: 2023-11-18 21:20:34
  * @LastEditors: your name
- * @LastEditTime: 2023-11-18 22:50:12
+ * @LastEditTime: 2023-12-21 21:34:57
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
  * @FilePath: \JavaPub-Blog\docs\posts\idea\IDEA插件-JSON转Java类.md
 -->
@@ -43,7 +43,13 @@
 ## 演示
 
 
+
 ### 安装
+
+![image-20231221212237755](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/image-20231221212237755.png)
+
+![image-20231221213446066](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/image-20231221213446066.png)
+
 
 
 ### json
@@ -108,6 +114,7 @@
 
 ### 操作
 
+![image-20231221213615613](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/image-20231221213615613.png)
 
 ### 效果
 
