@@ -1,0 +1,96 @@
+version: '2.2'
+services:
+  cerebro:
+    image: lmenezes/cerebro:latest
+    container_name: zzl_cerebro
+    ports:
+      - "9000:9000"
+    command:
+      - -Dhosts.0.host=http://elasticsearch:9200
+    networks:
+      - zzl_es7net
+  kibana:
+    image: kibana:7.16.2
+    container_name: zzl_kibana7
+    environment:
+      #- I18N_LOCALE=zh-CN
+      - XPACK_GRAPH_ENABLED=true
+      - TIMELION_ENABLED=true
+      - XPACK_MONITORING_COLLECTION_ENABLED="true"
+    ports:
+      - "5601:5601"
+    networks:
+      - zzl_es7net
+  elasticsearch:
+    image: elasticsearch:7.16.2
+    container_name: es7_hot
+    environment:
+      - cluster.name=geektime-zzl
+      - node.name=es7_hot
+      - node.attr.box_type=hot
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+      - discovery.seed_hosts=es7_hot,es7_warm,es7_cold
+      - cluster.initial_master_nodes=es7_hot,es7_warm,es7_cold
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - zzl_es7data_hot:/Users/shiyuwang/home/data/elasticsearch/data
+    ports:
+      - 19200:9200
+    networks:
+      - zzl_es7net
+  elasticsearch2:
+    image: elasticsearch:7.16.2
+    container_name: es7_warm
+    environment:
+      - cluster.name=geektime-zzl
+      - node.name=es7_warm
+      - node.attr.box_type=warm
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+      - discovery.seed_hosts=es7_hot,es7_warm,es7_cold
+      - cluster.initial_master_nodes=es7_hot,es7_warm,es7_cold
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - zzl_es7data_warm:/Users/shiyuwang/home/data/elasticsearch/data
+    networks:
+      - zzl_es7net
+  elasticsearch3:
+    image: elasticsearch:7.16.2
+    container_name: es7_cold
+    environment:
+      - cluster.name=geektime-zzl
+      - node.name=es7_cold
+      - node.attr.box_type=cold
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+      - discovery.seed_hosts=es7_hot,es7_warm,es7_cold
+      - cluster.initial_master_nodes=es7_hot,es7_warm,es7_cold
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - zzl_es7data_cold:/Users/shiyuwang/home/data/elasticsearch/data
+    networks:
+      - zzl_es7net
+
+
+volumes:
+  zzl_es7data_hot:
+    driver: local
+  zzl_es7data_warm:
+    driver: local
+  zzl_es7data_cold:
+    driver: local
+
+networks:
+  zzl_es7net:
+    driver: bridge
+
