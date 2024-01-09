@@ -86,8 +86,7 @@ curl --user username --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method
 
 
 
-guanfang
-https://www.blockchain.com/explorer/transactions/btc/331d02db3d6ee0cffae9052be5799bd7754c6ebb2020e422058b73334c59bf85
+官方：https://www.blockchain.com/explorer/transactions/btc/331d02db3d6ee0cffae9052be5799bd7754c6ebb2020e422058b73334c59bf85
 
 
 
