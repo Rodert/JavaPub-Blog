@@ -2,11 +2,11 @@
 
 
 
-一个群友给我发消息，该学的都学了，怎么就找不到心意的工作，太难了。
+一个群友给我发消息，“该学的都学了，怎么就找不到心意的工作，太难了”。
 
 很多在近期找过工作的同学一定都知道了，背诵八股文已经不是找工作的绝对王牌。企业最终要的是可以创造价值，或者首先需要干活的人，所以实战很重要。今天这篇文章就是给大家分享一下如何在我们实战生产中使用 redis。
 
-> 如何不了解 redis 的同学，可以先学习之前的 redis 入门教程。[reids 从黑铁到王者](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNDUyOTY0Nw==&action=getalbum&album_id=1389304118178840577#wechat_redirect)
+> 如果不了解 redis 的同学，可以先学习之前的 redis 入门教程。[reids 从黑铁到王者](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNDUyOTY0Nw==&action=getalbum&album_id=1389304118178840577#wechat_redirect)
 
 
 ...
