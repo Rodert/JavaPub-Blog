@@ -58,7 +58,7 @@ cd ~
 brew -v
 ```
 
-![alt text](image.png)
+![alt text](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/image.png)
 
 
 ## 安装 zsh
@@ -78,7 +78,7 @@ echo $SHELL
 cat /etc/shells
 ```
 
-![alt text](image-1.png)
+![alt text](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/image-1.png)
 
 切换到 zsh
 
@@ -110,7 +110,7 @@ curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 22 ms: C
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-![alt text](image-2.png)
+![alt text](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/image-2.png)
 
 出现这个界面，表示安装成功啦
 
