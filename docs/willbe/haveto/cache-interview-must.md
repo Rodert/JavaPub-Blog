@@ -181,8 +181,8 @@ public class LRULinkedMap<K,V> {
 在流量大时，可能 DB 就挂掉了，要是有人利用不存在的 key 频繁攻击我们的应用，这就是漏洞。如下图：
 
 
-![缓存穿透](https://tvax1.sinaimg.cn/large/007F3CC8ly1h8l7ej8yllj30gf0bs3z1.jpg)
 
+![缓存穿透](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F05%2F25%2F20240525-230741.webp)
 
 **如何解决**
 
@@ -191,7 +191,7 @@ public class LRULinkedMap<K,V> {
 1. 方案一，缓存空对象。
 当从 DB 查询数据为空，我们仍然将这个空结果进行缓存，具体的值需要使用特殊的标识，能和真正缓存的数据区分开。另外，需要设置较短的过期时间，一般建议不要超过 5 分钟。
 
-2. 方案二，BloomFilter 布隆过滤器。
+1. 方案二，BloomFilter 布隆过滤器。
 在缓存服务的基础上，构建 BloomFilter 数据结构，在 BloomFilter 中存储对应的 KEY 是否存在，如果存在，说明该 KEY 对应的值不为空。
 
 **如何选择**

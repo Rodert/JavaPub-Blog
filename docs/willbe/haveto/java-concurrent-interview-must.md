@@ -1,22 +1,22 @@
 ---
-## 这是侧边栏索引
+### 这是侧边栏索引
 index: 1
-## 这是页面的图标
+### 这是页面的图标
 icon: page
-## 这是文章的标题
+### 这是文章的标题
 title: 10道不得不会的Java并发基础面试题
-## 设置作者
+### 设置作者
 author: Wang Shiyu
-## 设置写作时间
+### 设置写作时间
 date: 2022-04-21
-## 一个页面可以有多个分类
+### 一个页面可以有多个分类
 category:
   - 最少必要面试题
-## 一个页面可以有多个标签
+### 一个页面可以有多个标签
 tag:
   - java
   - 面试题
-## 此页面会出现在首页的文章板块中
+### 此页面会出现在首页的文章板块中
 star: true
 ---
 
@@ -35,7 +35,7 @@ Java并发
 
 ---
 
-## 1. start()方法和run()方法的区别
+### 1. start()方法和run()方法的区别
 
 如果只是调用 run() 方法，那么代码还是同步执行的，必须等待一个线程的run()方法里面的代码全部执行完毕之后，另外一个线程才可以执行其run()方法里面的代码。
 
@@ -48,7 +48,7 @@ Java并发
 
 ---
   
-## 2. volatile关键字的作用
+### 2. volatile关键字的作用
 volatile `英 [ˈvɒlətaɪl]` ，第一个想到的一定是**保证内存可见性**（Memory Visibility）。可见性是性对于线程而言。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/dbb024baa3144f8b9abc1b241a6474a6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_20,color_FFFFFF,t_70,g_se,x_16)
@@ -98,7 +98,7 @@ initInstance(memory);   //2：初始化对象
 
 ---
 
-## 3. sleep方法和wait方法有什么区别
+### 3. sleep方法和wait方法有什么区别
 
 要了解sleep和wait，首先需要了解Java线程的6种状态。
 
@@ -133,7 +133,7 @@ object.wait()让当前线程进入不可运行状态，如sleep()一样，但不
 
 ---
 
-## 4. 如何停止一个正在运行的线程？
+### 4. 如何停止一个正在运行的线程？
 
 最直观的一定是 Thread.stop，但是它是不推荐的，并且已经废弃。看一下官方说明
 https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html
@@ -174,7 +174,7 @@ run() 方法中做标识符，保证优雅的停止服务。
 
 ---
 
-## 5. java如何实现多线程之间的通讯和协作？(如何在两个线程间共享数据？)
+### 5. java如何实现多线程之间的通讯和协作？(如何在两个线程间共享数据？)
 **volatile关键字方式**
 
 volatile有两大特性，一是可见性，二是有序性，禁止指令重排序，其中可见性就是可以让线程之间进行通信。
@@ -195,7 +195,7 @@ threadLocal方式的线程通信，不像以上三种方式是多个线程之间
 
 ---
 
-## 6. 什么是ThreadLocal?
+### 6. 什么是ThreadLocal?
 
 定义：线程局部变量是局限于线程内的变量，属于线程自身所有，不在多个线程间共享。java提供 ThreadLocal类 来支持线程局部变量，是一个实现线程安全的方式。
 
@@ -203,7 +203,7 @@ threadLocal方式的线程通信，不像以上三种方式是多个线程之间
 
 ---
 
-## 7. Java 中 CountDownLatch 和 CyclicBarrier 有什么不同？
+### 7. Java 中 CountDownLatch 和 CyclicBarrier 有什么不同？
 
 **概念：**
 
@@ -377,7 +377,7 @@ CyclicBarrier：
 
 ---
 
-## 8. 如何避免死锁？
+### 8. 如何避免死锁？
 ![](https://img-blog.csdnimg.cn/20190729214659783.png)
 从上图我们就可以看出，产生死锁就是俩个或多个线程在申请资源时，自己需要的资源别别人持有、并阻塞。所以导致死锁。
 
@@ -495,7 +495,7 @@ https://zhuanlan.zhihu.com/p/136294283
 
 ---
 
-## 9. Java 中 synchronized 和 ReentrantLock 有什么不同？
+### 9. Java 中 synchronized 和 ReentrantLock 有什么不同？
 
 **等待可中断:**
 
@@ -515,7 +515,7 @@ https://zhuanlan.zhihu.com/p/136294283
 
 ---
 
-## 10. 有三个线程 T1，T2，T3，怎么确保它们按顺序执行？
+### 10. 有三个线程 T1，T2，T3，怎么确保它们按顺序执行？
  
  **方法1：**
 
@@ -619,7 +619,7 @@ class ThreadC extends Thread {
 1. 如果需要下载CSDN资料又没有积分可以JavaPub留言，JavaPub帮你下载
 
 
-## 推荐阅读：
+### 推荐阅读：
 
 
 

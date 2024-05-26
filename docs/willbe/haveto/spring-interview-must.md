@@ -37,7 +37,7 @@ spring
 # Spring
 
 
-## 1. 什么是 Spring 框架？Spring 框架有哪些主要模块？
+### 1. 什么是 Spring 框架？Spring 框架有哪些主要模块？
 
 Spring是针对bean的生命周期进行管理的轻量级容器，一个控制反转和面向切面的容器框架
 
@@ -72,7 +72,7 @@ Context模块提供框架式的Bean的访问方式，其它程序可以通过Con
 MVC模块为spring提供了一套轻量级的MVC实现，即Spring MVC。
 
 
-## 2. Spring IOC、AOP举例说明
+### 2. Spring IOC、AOP举例说明
 
 > 这是一个基础问题，如果理解有难度、建议先读五遍。
 
@@ -110,7 +110,7 @@ IOC是Inversion of Control的缩写，多数书籍翻译成“控制反转”，
 参考资料：https://www.cnblogs.com/jianmang/articles/4947615.html
 
 
-## 3. 什么是控制反转(IOC)？什么是依赖注入（DI）？
+### 3. 什么是控制反转(IOC)？什么是依赖注入（DI）？
 
 IoC(Inversion of Control) – 控制反转。它不是一种技术，而是一种思想。
 
@@ -119,7 +119,7 @@ IOC：就是对象之间的依赖关系由容器来创建，对象之间的关�
 DI：我们在使用Spring容器的时候，容器通过调用set方法或者是构造器来建立对象之间的依赖关系。
 控制反转是目标，依赖注入是我们实现控制反转的一种手段。
 
-## 4. 描述一下 Spring Bean 的生命周期？
+### 4. 描述一下 Spring Bean 的生命周期？
 
 > 这道题是spring一道标准题目
 
@@ -154,7 +154,7 @@ DI：我们在使用Spring容器的时候，容器通过调用set方法或者是
   c. 最后判断这个Bean是否配置了dlestroy-method等自定义的销毁方法，如果有的话，则会自动调用其配置的销毁方法；
 
 
-## 5. Spring Bean 的作用域之间有什么区别？
+### 5. Spring Bean 的作用域之间有什么区别？
 
 **Spring器中的bean可以分为5个范围：**
 
@@ -164,7 +164,7 @@ DI：我们在使用Spring容器的时候，容器通过调用set方法或者是
 4. session：为每个session创建一个实例，session过期后，bean会随之消失；
 5. global-session：global-session和Portlet应用相关。当你的应用部署在Portlet容器中工作时，它包含很多portlet。如果你想要声明让所有的portlet公用全局的存储变量的话，那么全局变量需要存储在global-session中。
 
-## 6. Spring中都应用了哪些设计模式
+### 6. Spring中都应用了哪些设计模式
 
 1、简单工厂模式
 
@@ -242,7 +242,7 @@ Spring JdbcTemplate的query方法总体结构是一个模板方法+回调函数�
 
 
 
-## 7. Spring AOP里面的几个名词的概念
+### 7. Spring AOP里面的几个名词的概念
 
 （1）连接点（Join point）：指程序运行过程中所执行的方法。在Spring AOP中，一个连接点总代表一个方法的执行。 
 
@@ -270,7 +270,7 @@ Spring JdbcTemplate的query方法总体结构是一个模板方法+回调函数�
 
 ![](https://img-blog.csdnimg.cn/20201207001947787.png)
 
-## 8. BeanFactory和ApplicationContext有什么区别？
+### 8. BeanFactory和ApplicationContext有什么区别？
 
 BeanFactory和ApplicationContext是Spring的两大核心接口，都可以当做Spring的容器。
 
@@ -293,7 +293,7 @@ BeanFactory和ApplicationContext是Spring的两大核心接口，都可以当做
 4. BeanFactory通常以编程的方式被创建，ApplicationContext还能以声明的方式创建，如使用ContextLoader。
 
 
-## 9. Spring如何解决循环依赖问题：
+### 9. Spring如何解决循环依赖问题：
 
 见：https://javapub.blog.csdn.net/
 
@@ -330,7 +330,7 @@ Spring在单例模式下的setter方法依赖注入引起的循环依赖问题�
     </bean>
 ```
 
-## 10. Spring事务的实现方式和实现原理：
+### 10. Spring事务的实现方式和实现原理：
 
 Spring事务的本质其实就是数据库对事务的支持，没有数据库的事务支持，spring是无法提供事务功能的。Spring只提供统一事务管理接口，具体实现都是由各数据库自己实现，数据库事务的提交和回滚是通过 redo log 和 undo log实现的。Spring会在事务开始时，根据当前环境中设置的隔离级别，调整数据库隔离级别，由此保持一致。
 

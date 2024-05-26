@@ -34,7 +34,7 @@ Elastic Search
 
 @[toc]
 
-## 1. 说说你们公司 es 的集群架构，索引数据大小，分片有多少，以及一些调优手段 。
+### 1. 说说你们公司 es 的集群架构，索引数据大小，分片有多少，以及一些调优手段 。
 
 节点数、分片数、副本数，尽量根据自己公司使用情况回答，当然适当放大也可行。
 
@@ -71,11 +71,11 @@ g. Mapping阶段充分结合各个字段的属性，是否需要检索、是否�
 4. 数据量大时候，可以先基于时间敲定索引再检索；
 5. 设置合理的路由机制。
 
-## 2. elasticsearch 的倒排索引是什么
+### 2. elasticsearch 的倒排索引是什么
 倒排索引也就是单词到文档的映射，当然不只是存里文档id这么简单。还包括：词频（TF，Term Frequency）、偏移量（offset）、位置（Posting）。
 
 
-## 3. elasticsearch 是如何实现 master 选举的
+### 3. elasticsearch 是如何实现 master 选举的
 > ElasticSearch 的选主是 ZenDiscovery 模块负责，源码分析将首发在。 https://gitee.com/rodert/JavaPub 
 
 1. 对所有可以成为 Master 的节点（node.master: true）根据 nodeId 排序，每次选举每个节点都把自己所知道节点排一次序，然后选出第一个（第0位）节点，暂且认为它是 Master 节点。
@@ -83,7 +83,7 @@ g. Mapping阶段充分结合各个字段的属性，是否需要检索、是否�
 (当然也可以自己设定一个值，最小值设定为超过能成为Master节点的n/2+1，否则会出现脑裂问题。discovery.zen.minimum_master_nodes)
 
 
-## 5. 描述一下 Elasticsearch 索引文档的过程
+### 5. 描述一下 Elasticsearch 索引文档的过程
 
 ![在这里插入图片描述](https://tva3.sinaimg.cn/large/007F3CC8ly1h0niy8fcitj30ku09d3zr.jpg)
 
@@ -113,7 +113,7 @@ g. Mapping阶段充分结合各个字段的属性，是否需要检索、是否�
 > 3. 对于每一个搜索请求而言，索引中的所有段都会被搜索，并且每个段会消耗CPU 的时钟周、文件句柄和内存。这意味着段的数量越多，搜索性能会越低。
 > 4. 为了解决这个问题，Elasticsearch 会合并小段到一个较大的段，提交新的合并段到磁盘，并删除那些旧的小段。
 
-## 4. 详细描述一下 Elasticsearch 搜索的过程？
+### 4. 详细描述一下 Elasticsearch 搜索的过程？
 > es作为一个分布式的存储和检索系统，每个文档根据 _id 字段做路由分发被转发到对应的shard上。
 
 搜索执行阶段过程分俩个部分，我们称之为 Query Then Fetch。
@@ -166,7 +166,7 @@ es里面分布式search的查询流程如下：
 注：https://www.elastic.co/guide/cn/elasticsearch/guide/current/scroll.html
 ```
 
-## 5. Elasticsearch 在部署时，对 Linux 的设置有哪些优化方法
+### 5. Elasticsearch 在部署时，对 Linux 的设置有哪些优化方法
 1. 关闭缓存swap;
 
 > 原因：大多数操作系统会将内存使用到文件系统缓存，会将应用程序未用到的内存交换出去。会导致jvm的堆内存交换到磁盘上。交换会导致性能问题。会导致内存垃圾回收延长。会导致集群节点响应时间变慢，或者从集群中断开。
@@ -183,15 +183,15 @@ es里面分布式search的查询流程如下：
 
 > https://www.elastic.co/cn/blog/how-to-design-your-elasticsearch-data-storage-architecture-for-scale#raid56
 
-## 6. Elasticsearch 中的节点（比如共 20 个），其中的 10 个选了一个 master，另外 10 个选了另一个 master，怎么办？
+### 6. Elasticsearch 中的节点（比如共 20 个），其中的 10 个选了一个 master，另外 10 个选了另一个 master，怎么办？
 1. 当集群 master 候选数量不小于 3 个时，可以通过设置最少投票通过数量（discovery.zen.minimum_master_nodes）超过所有候选节点一半以上来解决脑裂问题；
 
 2. 当候选数量为两个时，只能修改为唯一的一个 master 候选，其他作为 data节点，避免脑裂问题。
 
-## 7. 客户端在和集群连接时，如何选择特定的节点执行请求的？
+### 7. 客户端在和集群连接时，如何选择特定的节点执行请求的？
 client 远程连接连接一个 elasticsearch 集群。它并不加入到集群中，只是获得一个或者多个初始化的地址，并以轮询的方式与这些地址进行通信。
 
-## 8. 详细描述一下 Elasticsearch 更新和删除文档的过程。
+### 8. 详细描述一下 Elasticsearch 更新和删除文档的过程。
  
 
 1. 删除和更新也都是写操作，但是 Elasticsearch 中的文档是不可变的，因此不能被删除或者改动以展示其变更；(根本原因是底层lucene的segment段文件不可更新删除)
@@ -200,7 +200,7 @@ client 远程连接连接一个 elasticsearch 集群。它并不加入到集群�
 
 旧版本的文档依然能匹配查询，但是会在结果中被过滤掉。
 
-## 9. Elasticsearch 对于大数据量（上亿量级）的聚合如何实现？
+### 9. Elasticsearch 对于大数据量（上亿量级）的聚合如何实现？
 > 这道题目较难，相信大家看到很多类似这种回答
 
 Elasticsearch 提供的首个近似聚合是cardinality 度量。它提供一个字段的基数，即该字段的distinct或者unique值的数目。它是基于HLL算法的。HLL 会先对我们的输入作哈希运算，然后根据哈希运算的结果中的 bits 做概率估算从而得到基数。其特点是：可配置的精度，用来控制内存的使用（更精确 ＝ 更多内存）；小的数据集精度是非常高的；我们可以通过配置参数，来设置去重需要的固定内存使用量。无论数千还是数十亿的唯一值，内存使用量只与你配置的精确度相关。
@@ -228,7 +228,7 @@ HyperLogLog：
 来源：刷刷面试
 ```
 
-## 10. 在并发情况下，Elasticsearch 如果保证读写一致？
+### 10. 在并发情况下，Elasticsearch 如果保证读写一致？
 > 首先要了解什么是一致性，在分布式系统中，我们一般通过CPA理论分析。
 
 分布式系统不可能同时满足一致性（C：Consistency）、可用性（A：Availability）和分区容忍性（P：Partition Tolerance），最多只能同时满足其中两项。
@@ -237,7 +237,7 @@ HyperLogLog：
 2. 另外对于写操作，一致性级别支持 quorum/one/all，默认为 quorum，即只有当大多数分片可用时才允许写操作。但即使大多数可用，也可能存在因为网络等原因导致写入副本失败，这样该副本被认为故障，分片将会在一个不同的节点上重建。
 3. 对于读操作，可以设置 replication 为 sync(默认)，这使得操作在主分片和副本分片都完成后才会返回；如果设置 replication 为 async 时，也可以通过设置搜索请求参数_preference 为 primary 来查询主分片，确保文档是最新版本。
 
-## 11. 介绍一下你们的个性化搜索方案？
+### 11. 介绍一下你们的个性化搜索方案？
 > 如果你没有很多实战经验，可以基于 word2vec 做一些练习，我的博客提供了 word2vec Java版的一些Demo。
 
 基于 word2vec 和 Elasticsearch 实现个性化搜索，它有以下优点：
@@ -249,7 +249,7 @@ HyperLogLog：
 
 
 
-## 推荐阅读：
+### 推荐阅读：
 
 
 
