@@ -564,7 +564,7 @@ class ThreadB extends Thread {
     Thread threadA;
 
     public ThreadB() {
-        // TODO Auto-generated constructor stub
+        // dosomething Auto-generated constructor stub
     }
 
     public ThreadB(Thread threadA) {
@@ -576,7 +576,7 @@ class ThreadB extends Thread {
         try {
             threadA.join();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
+            // dosomething Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println("线程B");
@@ -595,7 +595,7 @@ class ThreadC extends Thread {
         try {
             threadB.join();
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
+            // dosomething Auto-generated catch block
             e.printStackTrace();
         }
         System.out.println("线程C");

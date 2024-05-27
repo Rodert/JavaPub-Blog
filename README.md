@@ -40,7 +40,7 @@ JavaPub的博客仓库
 
 
 
-# TODO
+# TODO List
 
 - [x] 初始化vuepress
 - [x] 安装主题vuepress-theme-hope
