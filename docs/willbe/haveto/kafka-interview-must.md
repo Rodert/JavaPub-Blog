@@ -332,4 +332,4 @@ Kafka 会将分区 HW 之前的消息暴露给消费者。分区越多则副本�
 
 
 
-![91ec3d2507612867d21de87e798cbaba](https://tvax2.sinaimg.cn/large/007F3CC8ly1h3dml6lpcxj30hs0ht0tb.jpg)
+

@@ -138,7 +138,7 @@ redis 提供了两种持久化的方式，分别是**快照方式（RDB Redis Da
 
 这个需要掌握redis底层的数据结构。下图作为参考：
 
-![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h391syfw1qj30hs0c2t9m.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271041311.png)
 
 
 5. **控制key的数量**
@@ -155,11 +155,12 @@ redis部署分为单节点、主从部署（master-slave）、哨兵部署（Sen
 
 哨兵部署：分别有哨兵集群与Redis的主从集群，哨兵作为操作系统中的一个监控进程，对应监控每一个Redis实例，如果master服务异常（ping pong其中节点没有回复且超过了一定时间），就会多个哨兵之间进行确认，如果超过一半确认服务异常，则对master服务进行下线处理，并且选举出当前一个slave节点来转换成master节点；如果slave节点服务异常，也是经过多个哨兵确认后，进行下线处理。提高了redis集群高可用的特性，及横向扩展能力的增强。
 
-![image](https://tvax4.sinaimg.cn/large/007F3CC8ly1h3923wycklj30oq0hwtbl.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271041077.png)
+
 
 集群部署：属于**“去中心化”**的一种方式，多个 master 节点保存整个集群中的全部数据，而数据根据 key 进行 crc-16 校验算法进行散列，将 key 散列成对应 16383 个 slot，而 Redis cluster 集群中每个 master 节点负责不同的slot范围。每个 master 节点下还可以配置多个 slave 节点，同时也可以在集群中再使用 sentinel 哨兵提升整个集群的高可用性。
 
-![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h39277u34pj30py0nojxa.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271042033.png)
 
 
 ### 9. redis实现分布式锁要注意什么？

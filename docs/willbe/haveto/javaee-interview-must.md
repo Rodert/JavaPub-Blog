@@ -68,7 +68,7 @@ JSP有9个内置对象：
 - exception：封装页面抛出异常的对象。
 
 
-![JSP的9内置对象及其含义](https://tva4.sinaimg.cn/large/007F3CC8ly1h3uz7jfq18j30rx0bytdd.jpg)
+![JSP的9内置对象及其含义](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271038434.png)
 
 ### 2. 介绍一下 Servlet 生命周期
 

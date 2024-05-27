@@ -661,7 +661,8 @@ Employee emp5 = (Employee) in.readObject();
 
 
 > 查看更多面试题及答案
-> ![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h11lc8tbdbj3076076gm7.jpg)
+> ![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271038052.png)
+
 
 ### 推荐阅读：
 

@@ -421,5 +421,4 @@ spring事务的传播机制说的是，当多个事务同时存在的时候，sp
 
 
 
-![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h32gkgw3jrj30je0aignk.jpg)
 

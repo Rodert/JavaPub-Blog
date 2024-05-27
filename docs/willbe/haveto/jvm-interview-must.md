@@ -42,7 +42,9 @@ JVM
 
 点击放大看，一图胜千文
 
-![image](https://tvax1.sinaimg.cn/large/007F3CC8ly1h11l1b6ykaj30x50kl46x.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271039590.png)
+
+
 
 - 方法区和堆是所有线程共享的内存区域；而虚拟机栈、本地方法栈和程序计数器的运行是线程私有的内存区域，运行时数据区域就是我们常说的JVM的内存。
 
@@ -112,18 +114,15 @@ JVM
 
 ### 6. 说一下 JVM 有哪些垃圾回收器？
 
-![image](https://tva2.sinaimg.cn/large/007F3CC8ly1h11l1p8888j30te07oacq.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271039170.png)
 
-
-![image](https://tvax1.sinaimg.cn/large/007F3CC8ly1h11l1ykqpsj30vx08o14v.jpg)
-
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271039924.png)
 
 ### 7. 说一下类加载的执行过程？
 
 -  **加载**：根据查找路径找到相应的 class 文件然后装载入内存中；
 
-![image](https://tvax2.sinaimg.cn/large/007F3CC8ly1h11l29871ij30is07h76f.jpg)
-
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271039756.png)
 
 - **验证**：检查加载的 class 文件的正确性；
 - **准备**：给类中的静态变量分配内存空间；
@@ -147,7 +146,7 @@ JVM
 
 ### 9. CMS垃圾清理的过程
 
-![image](https://tva4.sinaimg.cn/large/007F3CC8ly1h11l2qpppoj30se08sgq4.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271040414.png)
 
 CMS整个过程比之前的收集器要复杂，整个过程分为4个主要阶段，即初始标记阶段、并发标记阶段、重新标记阶段和并发清除阶段。(涉及STW的阶段主要是：初始标记 和 重新标记 stop-the-world)
 
@@ -161,7 +160,7 @@ CMS整个过程比之前的收集器要复杂，整个过程分为4个主要阶�
 
 ### 10. 常用的 JVM 调优的参数都有哪些？
 
-![image](https://tvax1.sinaimg.cn/large/007F3CC8ly1h11l35h3jfj30pd097764.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271040021.png)
 
 - -XX:NewRatio=4：设置年轻的和老年代的内存比例为 1:4；
 - -XX:SurvivorRatio=8：设置新生代 Eden 和 Survivor 比例为 8:2；
@@ -171,7 +170,7 @@ CMS整个过程比之前的收集器要复杂，整个过程分为4个主要阶�
 - -XX:+PrintGC：开启打印 gc 信息；
 - -XX:+PrintGCDetails：打印 gc 详细信息。
 
-![image](https://tvax4.sinaimg.cn/large/007F3CC8ly1h11l3rzpgsj30mb0883ze.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271040096.png)
 
 JVM 调优-这个问题单独一篇
 

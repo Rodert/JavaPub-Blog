@@ -203,7 +203,8 @@ student
 
 一图胜千文
 
-![来源网络](https://tvax2.sinaimg.cn/large/007F3CC8ly1h3i5df8ddbj30l90ir0uj.jpg)
+
+![来源网络](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271040265.png)
 
 1. 读取 MyBatis 配置文件：mybatis-config.xml 为 MyBatis 的全局配置文件，配置了 MyBatis 的运行环境等信息，例如数据库连接信息。
 
@@ -287,5 +288,5 @@ Mybatis 使用 RowBounds 对象进行分页，它是针对ResultSet结果集执�
 [GItHub](https://github.com/Rodert)|[GitEE](https://gitee.com/rodert)
 
 
-![image](https://tvax3.sinaimg.cn/large/007F3CC8ly1h3i5qc8fnyj30j708qq4k.jpg)
+
 

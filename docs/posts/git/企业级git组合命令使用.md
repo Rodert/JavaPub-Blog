@@ -249,8 +249,7 @@ git commit --amend
 
 一图顶千文
 
-![git流程图](https://tvax3.sinaimg.cn/mw690/007F3CC8ly1h0grxhziyjj30y90dijxe.jpg)
-
+![git流程图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271044703.png)
 
 简单来说：git pull = git fetch + git merge
 

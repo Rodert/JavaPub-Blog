@@ -183,7 +183,6 @@ zookeeper v3.2.0 版本后，添加了 Chroot 特性，该特性允许每个客�
 ZooKeeper以Fast Paxos算法为基础，Paxos 算法存在活锁的问题，即当有多个 proposer 交错提交时有可能互相排斥导致没有一个proposer能提交成功，而Fast Paxos做了一些优化，通过选举产生一个领导者，只有leader才能提交proposer具体算法可见Fast Paxos。
 
 
-![image](https://tva2.sinaimg.cn/large/007F3CC8ly1h3p94cykerj30rl0c541z.jpg)
 
 
 低谷蓄力
