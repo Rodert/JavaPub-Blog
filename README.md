@@ -1,6 +1,5 @@
 # JavaPub-Blog
 
-
 JavaPub的博客仓库
 
 <http://javapub.net.cn/>
