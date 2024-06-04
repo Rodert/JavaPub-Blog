@@ -12,9 +12,9 @@
 
 
 
-本篇是系列文章（以 MySQL 为例），从多个角度分析、解决慢查询，如意犹未尽：**微信搜【JavaPub】**
+本篇是系列文章（以 MySQL 为例），从多个角度分析、解决慢查询，如意犹未尽：**【JavaPub】**
 
-![前图](https://img-blog.csdnimg.cn/20210411224245818.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041542434.png)
 
 为了提高查询效率，当数据库表加完索引后还不不能满足性能需求，第二步，SQL 语句优化。
 
@@ -63,7 +63,8 @@ https://dev.mysql.com/doc/refman/5.6/en/select-optimization.html
 
 ---
 
-![jianchizhu1](https://img-blog.csdnimg.cn/20210411224047719.png)
+
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041543268.png)
 
 ### 3. 应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，如：
 
@@ -79,7 +80,7 @@ union all
 select id from t where num=20	
 ```
 
-避免使用不代表一定不使用，很多时候还取决于 MySql 引擎对查询的优化。参考前一篇：微信搜：JavaPub【慢查询优化方案-索引篇【JavaPub版】】
+避免使用不代表一定不使用，很多时候还取决于 MySql 引擎对查询的优化。参考前一篇：JavaPub【慢查询优化方案-索引篇【JavaPub版】】
 
 ---
 
@@ -202,7 +203,7 @@ select num from a where exists(select 1 from b where num=a.num)
 
 ---
 
-![jianchizhu](https://img-blog.csdnimg.cn/20210411223857702.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041544650.png)
 
 ### 16. 避免频繁创建和删除临时表，以减少系统表资源的消耗。
 
@@ -261,4 +262,5 @@ https://dev.mysql.com/doc/refman/5.7/en/is-null-optimization.html
 
 
 
-![多表联查](https://img-blog.csdnimg.cn/20201230220331925.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041544910.png)
+
