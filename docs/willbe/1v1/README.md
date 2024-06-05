@@ -7,15 +7,6 @@
 《面试1v1》是由 JavaPub 编写的真人1对1面试对话教程，通过真实案例编写，生动、有趣、干货满满。
 
 
-## 参考
-
-
-一个博主，1.2k阅读量，可以转载他的非原创文章
-http://www.dabin-coder.cn/campus-recruit/project-experience.html#%E6%80%BB%E7%BB%93
-
-https://www.nowcoder.com/discuss/post/353154807454179328
-
-
 ---
 
 # 放在末尾。用于知乎回答问题时放在末尾。
