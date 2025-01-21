@@ -3,7 +3,7 @@
  * @Author: JavaPub
  * @Date: 2025-01-21 15:59:52
  * @LastEditors: your name
- * @LastEditTime: 2025-01-21 16:00:25
+ * @LastEditTime: 2025-01-21 16:28:03
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
  * @FilePath: /JavaPub-Blog/docs/posts/面试与职场/如何给自己的域名配置免费的HTTPS.md
 -->
@@ -26,4 +26,6 @@
 ![image-20250121161421250](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202501211614736.png)
 
 有人说免费还这么多事，那你说对了，今天就给你教一种免费还自动续的方案。
+
+迁移到了 javapub.net.cn
 
